@@ -1,0 +1,6 @@
+Invoking command in '/home/nvidia/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/nvidia/ros2_ws/install/slam_toolbox
+Invoked command in '/home/nvidia/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/nvidia/ros2_ws/install/slam_toolbox
+Invoking command in '/home/nvidia/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/slam_toolbox -- -j4 -l4
+Invoked command in '/home/nvidia/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/slam_toolbox -- -j4 -l4
+Invoking command in '/home/nvidia/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/ros2_ws/build/slam_toolbox
+Invoked command in '/home/nvidia/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/ros2_ws/build/slam_toolbox

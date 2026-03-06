@@ -1,0 +1,2 @@
+Invoking command in '/home/nvidia/ros2_ws/build/cpp_qcar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/ros2_ws/install/qcar_nodes:/home/nvidia/ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/cpp_qcar -- -j4 -l4
+Invoked command in '/home/nvidia/ros2_ws/build/cpp_qcar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/ros2_ws/install/qcar_nodes:/home/nvidia/ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/cpp_qcar -- -j4 -l4

@@ -1,0 +1,28 @@
+[3.370s] Invoking command in '/home/nvidia/qcar_ros2_ws/build/control_nodes': PYTHONPATH=/home/nvidia/qcar_ros2_ws/build/control_nodes/prefix_override:/home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nvidia/qcar_ros2_ws/build/control_nodes/build --no-deps install_data
+[4.527s] /home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.527s]   % (opt, underscore_opt)
+[4.718s] running develop
+[4.719s] /home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/easy_install.py:159: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.719s]   EasyInstallDeprecationWarning,
+[4.724s] /home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.725s]   setuptools.SetuptoolsDeprecationWarning,
+[4.977s] /home/nvidia/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+[4.977s]   PkgResourcesDeprecationWarning,
+[5.436s] running egg_info
+[5.437s] writing control_nodes.egg-info/PKG-INFO
+[5.437s] writing dependency_links to control_nodes.egg-info/dependency_links.txt
+[5.438s] writing entry points to control_nodes.egg-info/entry_points.txt
+[5.439s] writing requirements to control_nodes.egg-info/requires.txt
+[5.439s] writing top-level names to control_nodes.egg-info/top_level.txt
+[5.450s] reading manifest file 'control_nodes.egg-info/SOURCES.txt'
+[5.454s] writing manifest file 'control_nodes.egg-info/SOURCES.txt'
+[5.661s] running build_ext
+[5.662s] Creating /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control-nodes.egg-link (link to .)
+[5.665s] Installing lane_detect script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+[5.666s] Installing qcar_ekf script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+[5.666s] Installing wall_follow script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+[5.667s] 
+[5.668s] Installed /home/nvidia/qcar_ros2_ws/build/control_nodes
+[5.668s] running install_data
+[5.668s] copying launch/qcar.launch.py -> /home/nvidia/qcar_ros2_ws/install/control_nodes/share/control_nodes/launch
+[5.803s] Invoked command in '/home/nvidia/qcar_ros2_ws/build/control_nodes' returned '0': PYTHONPATH=/home/nvidia/qcar_ros2_ws/build/control_nodes/prefix_override:/home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nvidia/qcar_ros2_ws/build/control_nodes/build --no-deps install_data

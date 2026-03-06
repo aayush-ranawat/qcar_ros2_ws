@@ -1,0 +1,226 @@
+#!/usr/bin/env python3
+"""
+qcar_ekf.py
+
+EKF-based localization for QCar using:
+ - /qcar/user_command  (geometry_msgs/msg/Vector3Stamped)  vector.x = v, vector.y = delta
+ - /qcar/imu           (sensor_msgs/msg/Imu)               angular_velocity.z used as yaw-rate measurement
+
+Publishes:
+ - /qcar/odometry/filtered (nav_msgs/msg/Odometry)
+ - TF odom -> base_link
+"""
+
+import rclpy
+from rclpy.node import Node
+from rclpy.time import Time
+from geometry_msgs.msg import TransformStamped
+from geometry_msgs.msg import Vector3Stamped
+from sensor_msgs.msg import Imu
+from nav_msgs.msg import Odometry
+import numpy as np
+import math
+from transforms3d.euler import euler2quat
+# import tf2_ros
+
+def wrap_to_pi(a):
+    return (a + np.pi) % (2.0 * np.pi) - np.pi
+
+class QCarEKFNode(Node):
+    def __init__(self):
+        super().__init__('qcar_ekf')
+
+        # Parameters
+        self.declare_parameter('wheelbase', 0.257)
+        self.declare_parameter('process_noise_diag', [0.01, 0.01, 0.01])
+        self.declare_parameter('measurement_noise', 0.01)
+        self.declare_parameter('publish_rate', 50.0)
+
+        self.L = float(self.get_parameter('wheelbase').value)
+        q_diag = np.array(self.get_parameter('process_noise_diag').value, dtype=float)
+        self.Q = np.diag(q_diag)
+        self.R = np.array([[float(self.get_parameter('measurement_noise').value)]])
+
+        # State and covariance
+        self.x = np.zeros((3,1))
+        self.P = np.eye(3) * 0.1
+
+        # Inputs
+        self.v = 0.0
+        self.delta = 0.0
+
+        # timing
+        self.last_time = None
+
+        # Subscribers
+        self.user_cmd_sub = self.create_subscription(
+            Vector3Stamped, '/qcar/user_command', self.user_cmd_cb, 10)
+        self.imu_sub = self.create_subscription(
+            Imu, '/qcar/imu', self.imu_cb, 50)
+
+        # Publishers
+        self.odom_pub = self.create_publisher(Odometry, '/qcar/odometry/filtered', 10)
+
+        # # TF broadcaster
+        # self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
+
+        # Timer fallback
+        publish_rate = float(self.get_parameter('publish_rate').value)
+        self.timer = self.create_timer(1.0 / publish_rate, self.timer_cb)
+
+        self.get_logger().info('QCar EKF node started. wheelbase=%.3f' % (self.L,))
+
+    def user_cmd_cb(self, msg: Vector3Stamped):
+        try:
+            self.v = float(msg.vector.x)
+            self.delta = float(msg.vector.y)
+        except Exception:
+            self.get_logger().warn('Failed to parse /qcar/user_command')
+            return
+
+    def imu_cb(self, msg: Imu):
+        # timestamp
+        if msg.header.stamp.sec == 0 and msg.header.stamp.nanosec == 0:
+            now_f = self.get_clock().now().nanoseconds * 1e-9
+        else:
+            # compute timestamp (seconds) directly from header fields
+            now_f = float(msg.header.stamp.sec) + float(msg.header.stamp.nanosec) * 1e-9
+
+        if self.last_time is None:
+            dt = 0.0
+        else:
+            dt = max(1e-6, now_f - self.last_time)
+        self.last_time = now_f
+
+        z = np.array([[msg.angular_velocity.z]])
+
+        if dt > 0:
+            self.predict(dt, (self.v, self.delta))
+
+        self.update(z, (self.v, self.delta))
+
+        stamp_sec = msg.header.stamp.sec if msg.header.stamp.sec != 0 else int(now_f)
+        stamp_nsec = msg.header.stamp.nanosec if msg.header.stamp.nanosec != 0 else int((now_f - int(now_f))*1e9)
+        self.publish_odom(stamp_sec, stamp_nsec)
+
+    def timer_cb(self):
+        now_f = self.get_clock().now().nanoseconds * 1e-9
+        if self.last_time is None:
+            self.last_time = now_f
+            return
+        dt = max(1e-6, now_f - self.last_time)
+        self.last_time = now_f
+        self.predict(dt, (self.v, self.delta))
+        t = self.get_clock().now().to_msg()
+        self.publish_odom(t.sec, t.nanosec)
+
+    def motion_model(self, x, u, dt):
+        v, delta = u
+        th = float(x[2,0])
+        if abs(v) < 1e-9 or dt <= 0.0:
+            return x.copy()
+        dx = v * math.cos(th) * dt
+        dy = v * math.sin(th) * dt
+        dth = (v * math.tan(delta) / self.L) * dt
+        x_new = float(x[0,0]) + dx
+        y_new = float(x[1,0]) + dy
+        th_new = wrap_to_pi(th + dth)
+        return np.array([[x_new], [y_new], [th_new]])
+
+    def motion_jacobian(self, x, u, dt):
+        v, delta = u
+        th = float(x[2,0])
+        F = np.array([
+            [1.0, 0.0, -v * math.sin(th) * dt],
+            [0.0, 1.0,  v * math.cos(th) * dt],
+            [0.0, 0.0, 1.0]
+        ])
+        return F
+
+    def predict(self, dt, u):
+        self.x = self.motion_model(self.x, u, dt)
+        F = self.motion_jacobian(self.x, u, dt)
+        self.P = F @ self.P @ F.T + self.Q
+
+    def measurement_model(self, x, u):
+        v, delta = u
+        yawrate_pred = 0.0 if abs(self.L) < 1e-9 else (v * math.tan(delta) / self.L)
+        return np.array([[yawrate_pred]])
+
+    def measurement_jacobian(self, x, u):
+        return np.zeros((1,3))
+
+    def update(self, z, u):
+        H = self.measurement_jacobian(self.x, u)
+        z_pred = self.measurement_model(self.x, u)
+        S = H @ self.P @ H.T + self.R
+        S = S + 1e-12 * np.eye(S.shape[0])
+        K = (self.P @ H.T) @ np.linalg.inv(S)
+        y = z - z_pred
+        self.x = self.x + K @ y
+        self.x[2,0] = wrap_to_pi(self.x[2,0])
+        I = np.eye(3)
+        self.P = (I - K @ H) @ self.P
+        self.P = 0.5 * (self.P + self.P.T)
+
+    def publish_odom(self, sec, nanosec):
+        odom = Odometry()
+        odom.header.stamp.sec = int(sec)
+        odom.header.stamp.nanosec = int(nanosec)
+        odom.header.frame_id = 'odom'
+        odom.child_frame_id = 'base_link'
+
+        odom.pose.pose.position.x = float(self.x[0,0])
+        odom.pose.pose.position.y = float(self.x[1,0])
+        odom.pose.pose.position.z = 0.0
+        w, x, y, z = euler2quat(0.0, 0.0, float(self.x[2,0]))
+        q = (x, y, z, w)
+        # q = tf_transformations.quaternion_from_euler(0.0, 0.0, float(self.x[2,0]))
+        odom.pose.pose.orientation.x = q[0]
+        odom.pose.pose.orientation.y = q[1]
+        odom.pose.pose.orientation.z = q[2]
+        odom.pose.pose.orientation.w = q[3]
+
+        cov = np.zeros((6,6))
+        cov[0:3, 0:3] = self.P
+        odom.pose.covariance = list(cov.reshape(36,))
+
+        odom.twist.twist.linear.x = float(self.v)
+        odom.twist.twist.angular.z = float(self.v * math.tan(self.delta) / self.L if abs(self.L) > 1e-9 else 0.0)
+        t_cov = np.eye(6) * 1e-3
+        odom.twist.covariance = list(t_cov.reshape(36,))
+
+        self.odom_pub.publish(odom)
+
+        # publish TF
+        t = TransformStamped()
+        t.header.stamp.sec = int(sec)
+        t.header.stamp.nanosec = int(nanosec)
+        t.header.frame_id = 'odom'
+        t.child_frame_id = 'base_link'
+        t.transform.translation.x = float(self.x[0,0])
+        t.transform.translation.y = float(self.x[1,0])
+        t.transform.translation.z = 0.0
+        t.transform.rotation.x = q[0]
+        t.transform.rotation.y = q[1]
+        t.transform.rotation.z = q[2]
+        t.transform.rotation.w = q[3]
+        # try:
+        #     self.tf_broadcaster.sendTransform(t)
+        # except Exception:
+        #     pass
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = QCarEKFNode()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.get_logger().info('Shutting down QCar EKF node')
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+

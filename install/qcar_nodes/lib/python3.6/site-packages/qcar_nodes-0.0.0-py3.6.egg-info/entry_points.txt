@@ -1,0 +1,10 @@
+[console_scripts]
+command_node = qcar_nodes.commandnode:main
+csi_node = qcar_nodes.csinode:main
+image_recorder = qcar_nodes.ImageRecorder:main
+img_node = qcar_nodes.Imageviewer:main
+lidar_node = qcar_nodes.lidarnode:main
+qcar_node = qcar_nodes.qcarnode:main
+rgbd_node = qcar_nodes.rgbdnode:main
+test_node = qcar_nodes.lidar_test:main
+

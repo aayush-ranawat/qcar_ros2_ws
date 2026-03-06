@@ -1,0 +1,15 @@
+{
+  "package_name": "slam_toolbox",
+  "non_idl_tuples": [
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/Pause.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/ClearQueue.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/ToggleInteractive.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/Clear.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/SaveMap.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/LoopClosure.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/MergeMaps.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/AddSubmap.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/DeserializePoseGraph.srv",
+    "/home/nvidia/ros2_ws/src/slam_toolbox:srvs/SerializePoseGraph.srv"
+  ]
+}

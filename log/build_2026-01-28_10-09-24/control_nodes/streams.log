@@ -1,0 +1,43 @@
+[5.072s] Invoking command in '/home/nvidia/ros2_ws/src/control_nodes': PYTHONPATH=/home/nvidia/ros2_ws/build/control_nodes/prefix_override:/home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/control_nodes build --build-base /home/nvidia/ros2_ws/build/control_nodes/build install --record /home/nvidia/ros2_ws/build/control_nodes/install.log --install-scripts $base/lib/control_nodes --single-version-externally-managed
+[6.332s] /home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[6.333s]   % (opt, underscore_opt)
+[6.487s] running egg_info
+[6.489s] creating ../../build/control_nodes/control_nodes.egg-info
+[6.490s] writing ../../build/control_nodes/control_nodes.egg-info/PKG-INFO
+[6.490s] writing dependency_links to ../../build/control_nodes/control_nodes.egg-info/dependency_links.txt
+[6.491s] writing entry points to ../../build/control_nodes/control_nodes.egg-info/entry_points.txt
+[6.492s] writing requirements to ../../build/control_nodes/control_nodes.egg-info/requires.txt
+[6.492s] writing top-level names to ../../build/control_nodes/control_nodes.egg-info/top_level.txt
+[6.504s] writing manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'
+[6.512s] reading manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'
+[6.517s] writing manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'
+[6.518s] running build
+[6.519s] running build_py
+[6.520s] creating /home/nvidia/ros2_ws/build/control_nodes/build
+[6.520s] creating /home/nvidia/ros2_ws/build/control_nodes/build/lib
+[6.521s] creating /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes
+[6.521s] copying control_nodes/qcar_ekf.py -> /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes
+[6.522s] copying control_nodes/__init__.py -> /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes
+[6.523s] running install
+[6.524s] /home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.529s]   setuptools.SetuptoolsDeprecationWarning,
+[6.530s] running install_lib
+[6.530s] creating /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes
+[6.531s] copying /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes/qcar_ekf.py -> /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes
+[6.532s] copying /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes/__init__.py -> /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes
+[6.532s] byte-compiling /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes/qcar_ekf.py to qcar_ekf.cpython-36.pyc
+[6.536s] byte-compiling /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes/__init__.py to __init__.cpython-36.pyc
+[6.536s] running install_data
+[6.539s] creating /home/nvidia/ros2_ws/install/control_nodes/share/ament_index
+[6.541s] creating /home/nvidia/ros2_ws/install/control_nodes/share/ament_index/resource_index
+[6.542s] creating /home/nvidia/ros2_ws/install/control_nodes/share/ament_index/resource_index/packages
+[6.542s] copying resource/control_nodes -> /home/nvidia/ros2_ws/install/control_nodes/share/ament_index/resource_index/packages
+[6.543s] copying package.xml -> /home/nvidia/ros2_ws/install/control_nodes/share/control_nodes
+[6.543s] creating /home/nvidia/ros2_ws/install/control_nodes/share/control_nodes/launch
+[6.544s] copying launch/qcar.launch.py -> /home/nvidia/ros2_ws/install/control_nodes/share/control_nodes/launch
+[6.544s] running install_egg_info
+[6.548s] Copying ../../build/control_nodes/control_nodes.egg-info to /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes-0.0.0-py3.6.egg-info
+[6.552s] running install_scripts
+[6.630s] Installing qcar_ekf script to /home/nvidia/ros2_ws/install/control_nodes/lib/control_nodes
+[6.631s] writing list of installed files to '/home/nvidia/ros2_ws/build/control_nodes/install.log'
+[6.745s] Invoked command in '/home/nvidia/ros2_ws/src/control_nodes' returned '0': PYTHONPATH=/home/nvidia/ros2_ws/build/control_nodes/prefix_override:/home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/control_nodes build --build-base /home/nvidia/ros2_ws/build/control_nodes/build install --record /home/nvidia/ros2_ws/build/control_nodes/install.log --install-scripts $base/lib/control_nodes --single-version-externally-managed

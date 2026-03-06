@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing qcar_nodes.egg-info/PKG-INFO
+writing dependency_links to qcar_nodes.egg-info/dependency_links.txt
+writing entry points to qcar_nodes.egg-info/entry_points.txt
+writing requirements to qcar_nodes.egg-info/requires.txt
+writing top-level names to qcar_nodes.egg-info/top_level.txt
+reading manifest file 'qcar_nodes.egg-info/SOURCES.txt'
+writing manifest file 'qcar_nodes.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar-nodes.egg-link (link to .)
+Installing command_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+Installing csi_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+Installing image_recorder script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+Installing img_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+Installing lidar_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+Installing qcar_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+Installing rgbd_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+Installing test_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+
+Installed /home/nvidia/qcar_ros2_ws/build/qcar_nodes
+running install_data

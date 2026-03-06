@@ -1,0 +1,63 @@
+[1.446s] Invoking command in '/home/nvidia/ros2_ws/build/cpp_qcar': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/ros2_ws/src/cpp_qcar -DCMAKE_INSTALL_PREFIX=/home/nvidia/ros2_ws/install/cpp_qcar
+[1.602s] -- The C compiler identification is GNU 7.5.0
+[1.759s] -- The CXX compiler identification is GNU 7.5.0
+[1.778s] -- Detecting C compiler ABI info
+[1.932s] -- Detecting C compiler ABI info - done
+[1.956s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.957s] -- Detecting C compile features
+[1.958s] -- Detecting C compile features - done
+[1.967s] -- Detecting CXX compiler ABI info
+[2.142s] -- Detecting CXX compiler ABI info - done
+[2.168s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.168s] -- Detecting CXX compile features
+[2.170s] -- Detecting CXX compile features - done
+[2.178s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[2.281s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[2.281s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.429s] -- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)
+[3.496s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[3.619s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[3.622s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.625s] -- Looking for pthread.h
+[3.789s] -- Looking for pthread.h - found
+[3.790s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.954s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.955s] -- Looking for pthread_create in pthreads
+[4.097s] -- Looking for pthread_create in pthreads - not found
+[4.098s] -- Looking for pthread_create in pthread
+[4.261s] -- Looking for pthread_create in pthread - found
+[4.264s] -- Found Threads: TRUE  
+[4.356s] -- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)
+[4.614s] -- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+[4.957s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[4.961s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.962s] -- Configured cppcheck include dirs: 
+[4.964s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.966s] -- Added test 'lint_cmake' to check CMake code style
+[4.970s] -- Added test 'uncrustify' to check C / C++ code style
+[4.971s] -- Added test 'xmllint' to check XML markup files
+[4.976s] -- Configuring done
+[5.033s] -- Generating done
+[5.038s] -- Build files have been written to: /home/nvidia/ros2_ws/build/cpp_qcar
+[5.051s] Invoked command in '/home/nvidia/ros2_ws/build/cpp_qcar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/ros2_ws/src/cpp_qcar -DCMAKE_INSTALL_PREFIX=/home/nvidia/ros2_ws/install/cpp_qcar
+[5.061s] Invoking command in '/home/nvidia/ros2_ws/build/cpp_qcar': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/cpp_qcar -- -j4 -l4
+[5.147s] [ 50%] [32mBuilding CXX object CMakeFiles/base_to_lidar_tf.dir/src/base_to_lidar_tf.cpp.o[0m
+[11.420s] [100%] [32m[1mLinking CXX executable base_to_lidar_tf[0m
+[11.876s] [100%] Built target base_to_lidar_tf
+[11.897s] Invoked command in '/home/nvidia/ros2_ws/build/cpp_qcar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/cpp_qcar -- -j4 -l4
+[12.028s] Invoking command in '/home/nvidia/ros2_ws/build/cpp_qcar': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/ros2_ws/build/cpp_qcar
+[12.059s] -- Install configuration: ""
+[12.059s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/lib/cpp_qcar/base_to_lidar_tf
+[12.061s] -- Set runtime path of "/home/nvidia/ros2_ws/install/cpp_qcar/lib/cpp_qcar/base_to_lidar_tf" to ""
+[12.062s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/ament_index/resource_index/package_run_dependencies/cpp_qcar
+[12.063s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/ament_index/resource_index/parent_prefix_path/cpp_qcar
+[12.063s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/environment/ament_prefix_path.sh
+[12.064s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/environment/path.sh
+[12.064s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/local_setup.bash
+[12.064s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/local_setup.sh
+[12.065s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/local_setup.zsh
+[12.065s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/ament_index/resource_index/packages/cpp_qcar
+[12.066s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/cmake/cpp_qcarConfig.cmake
+[12.066s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/cmake/cpp_qcarConfig-version.cmake
+[12.067s] -- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/package.xml
+[12.075s] Invoked command in '/home/nvidia/ros2_ws/build/cpp_qcar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/ros2_ws/build/cpp_qcar

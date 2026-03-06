@@ -1,0 +1,24 @@
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  % (opt, underscore_opt)
+running develop
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/easy_install.py:159: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  EasyInstallDeprecationWarning,
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  setuptools.SetuptoolsDeprecationWarning,
+/home/nvidia/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+  PkgResourcesDeprecationWarning,
+running egg_info
+writing control_nodes.egg-info/PKG-INFO
+writing dependency_links to control_nodes.egg-info/dependency_links.txt
+writing entry points to control_nodes.egg-info/entry_points.txt
+writing requirements to control_nodes.egg-info/requires.txt
+writing top-level names to control_nodes.egg-info/top_level.txt
+reading manifest file 'control_nodes.egg-info/SOURCES.txt'
+writing manifest file 'control_nodes.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control-nodes.egg-link (link to .)
+Installing qcar_ekf script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+Installing wall_follow script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+
+Installed /home/nvidia/qcar_ros2_ws/build/control_nodes
+running install_data

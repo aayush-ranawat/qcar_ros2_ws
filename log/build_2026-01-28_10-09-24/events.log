@@ -1,0 +1,311 @@
+[0.000000] (-) TimerEvent: {}
+[0.001066] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.003534] (control_nodes) JobQueued: {'identifier': 'control_nodes', 'dependencies': OrderedDict()}
+[0.004311] (cpp_qcar) JobQueued: {'identifier': 'cpp_qcar', 'dependencies': OrderedDict()}
+[0.005906] (qcar_nodes) JobQueued: {'identifier': 'qcar_nodes', 'dependencies': OrderedDict()}
+[0.006144] (control_nodes) JobStarted: {'identifier': 'control_nodes'}
+[0.041212] (cpp_qcar) JobStarted: {'identifier': 'cpp_qcar'}
+[0.064958] (qcar_nodes) JobStarted: {'identifier': 'qcar_nodes'}
+[0.101125] (-) TimerEvent: {}
+[0.202611] (-) TimerEvent: {}
+[0.303585] (-) TimerEvent: {}
+[0.404261] (-) TimerEvent: {}
+[0.505026] (-) TimerEvent: {}
+[0.605686] (-) TimerEvent: {}
+[0.706356] (-) TimerEvent: {}
+[0.807054] (-) TimerEvent: {}
+[0.907804] (-) TimerEvent: {}
+[1.008609] (-) TimerEvent: {}
+[1.109490] (-) TimerEvent: {}
+[1.210433] (-) TimerEvent: {}
+[1.311130] (-) TimerEvent: {}
+[1.411961] (-) TimerEvent: {}
+[1.483731] (cpp_qcar) JobProgress: {'identifier': 'cpp_qcar', 'progress': 'cmake'}
+[1.484759] (cpp_qcar) Command: {'cmd': ['/usr/local/bin/cmake', '/home/nvidia/ros2_ws/src/cpp_qcar', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/ros2_ws/install/cpp_qcar'], 'cwd': '/home/nvidia/ros2_ws/build/cpp_qcar', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LANGUAGE', 'en_CA:en'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/nvidia/ros2_ws/src'), ('HOME', '/home/nvidia'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/home/nvidia/ros2_install'), ('COLCON_PREFIX_PATH', '/home/nvidia/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('RUNLEVEL', '3'), ('XDG_RUNTIME_DIR', '/home/nvidia/Documents/Quanser'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libstdc++.so.6'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SUDO_COMMAND', '/bin/bash'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SUDO_USER', 'nvidia'), ('OpenCV_DIR', '/usr/local/lib/cmake/opencv4'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/nvidia/ros2_ws/build/cpp_qcar'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python'), ('COLCON', '1'), ('LIBGL_DRIVERS_PATH', '/usr/lib/aarch64-linux-gnu/dri'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[1.512711] (-) TimerEvent: {}
+[1.614194] (-) TimerEvent: {}
+[1.643630] (cpp_qcar) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[1.714370] (-) TimerEvent: {}
+[1.800257] (cpp_qcar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[1.814522] (-) TimerEvent: {}
+[1.819167] (cpp_qcar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.914690] (-) TimerEvent: {}
+[1.973544] (cpp_qcar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.997869] (cpp_qcar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.998626] (cpp_qcar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.999521] (cpp_qcar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.008037] (cpp_qcar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.014845] (-) TimerEvent: {}
+[2.115521] (-) TimerEvent: {}
+[2.183650] (cpp_qcar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.209464] (cpp_qcar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.210205] (cpp_qcar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.211533] (cpp_qcar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.215635] (-) TimerEvent: {}
+[2.219436] (cpp_qcar) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[2.315824] (-) TimerEvent: {}
+[2.322145] (cpp_qcar) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[2.322811] (cpp_qcar) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.415979] (-) TimerEvent: {}
+[2.516700] (-) TimerEvent: {}
+[2.617369] (-) TimerEvent: {}
+[2.718079] (-) TimerEvent: {}
+[2.818762] (-) TimerEvent: {}
+[2.919457] (-) TimerEvent: {}
+[3.020604] (-) TimerEvent: {}
+[3.122044] (-) TimerEvent: {}
+[3.222771] (-) TimerEvent: {}
+[3.323621] (-) TimerEvent: {}
+[3.424391] (-) TimerEvent: {}
+[3.470093] (cpp_qcar) StdoutLine: {'line': b'-- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[3.524546] (-) TimerEvent: {}
+[3.537755] (cpp_qcar) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[3.624705] (-) TimerEvent: {}
+[3.660073] (cpp_qcar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[3.663573] (cpp_qcar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.666222] (cpp_qcar) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.724992] (-) TimerEvent: {}
+[3.826692] (-) TimerEvent: {}
+[3.830932] (cpp_qcar) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.831732] (cpp_qcar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.926851] (-) TimerEvent: {}
+[3.995988] (cpp_qcar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.996913] (cpp_qcar) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[4.027022] (-) TimerEvent: {}
+[4.128384] (-) TimerEvent: {}
+[4.138625] (cpp_qcar) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[4.139472] (cpp_qcar) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[4.228536] (-) TimerEvent: {}
+[4.302661] (cpp_qcar) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.305626] (cpp_qcar) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.328731] (-) TimerEvent: {}
+[4.397768] (cpp_qcar) StdoutLine: {'line': b'-- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)\n'}
+[4.428887] (-) TimerEvent: {}
+[4.532975] (-) TimerEvent: {}
+[4.633833] (-) TimerEvent: {}
+[4.655250] (cpp_qcar) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[4.734005] (-) TimerEvent: {}
+[4.834940] (-) TimerEvent: {}
+[4.935695] (-) TimerEvent: {}
+[4.998701] (cpp_qcar) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[5.002679] (cpp_qcar) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.003719] (cpp_qcar) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.005783] (cpp_qcar) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.008031] (cpp_qcar) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.011550] (cpp_qcar) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.013031] (cpp_qcar) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.017277] (cpp_qcar) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.035898] (-) TimerEvent: {}
+[5.069687] (cpp_qcar) StdoutLine: {'line': b'-- Generating done\n'}
+[5.075732] (control_nodes) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/control_nodes', 'build', '--build-base', '/home/nvidia/ros2_ws/build/control_nodes/build', 'install', '--record', '/home/nvidia/ros2_ws/build/control_nodes/install.log', '--install-scripts', '$base/lib/control_nodes', '--single-version-externally-managed'], 'cwd': '/home/nvidia/ros2_ws/src/control_nodes', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/root', 'USER': 'root', 'LANGUAGE': 'en_CA:en', 'QAL_DIR': '/home/nvidia/Documents/Quanser', 'LD_LIBRARY_PATH': '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:', 'SHLVL': '1', 'OLDPWD': '/home/nvidia/ros2_ws/src', 'HOME': '/home/nvidia', 'ROS_PYTHON_VERSION': '3', '_colcon_cd_root': '/home/nvidia/ros2_install', 'COLCON_PREFIX_PATH': '/home/nvidia/ros2_ws/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'root', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'RUNLEVEL': '3', 'XDG_RUNTIME_DIR': '/home/nvidia/Documents/Quanser', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LD_PRELOAD': '/usr/lib/aarch64-linux-gnu/libstdc++.so.6', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/dashing', 'SUDO_COMMAND': '/bin/bash', 'ROS_DOMAIN_ID': '42', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SUDO_USER': 'nvidia', 'OpenCV_DIR': '/usr/local/lib/cmake/opencv4', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/nvidia/ros2_ws/build/control_nodes', 'PYTHONPATH': '/home/nvidia/ros2_ws/build/control_nodes/prefix_override:/home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python', 'COLCON': '1', 'LIBGL_DRIVERS_PATH': '/usr/lib/aarch64-linux-gnu/dri'}, 'shell': False}
+[5.079845] (cpp_qcar) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/ros2_ws/build/cpp_qcar\n'}
+[5.092039] (cpp_qcar) CommandEnded: {'returncode': 0}
+[5.094443] (cpp_qcar) JobProgress: {'identifier': 'cpp_qcar', 'progress': 'build'}
+[5.097825] (cpp_qcar) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/nvidia/ros2_ws/build/cpp_qcar', '--', '-j4', '-l4'], 'cwd': '/home/nvidia/ros2_ws/build/cpp_qcar', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LANGUAGE', 'en_CA:en'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/nvidia/ros2_ws/src'), ('HOME', '/home/nvidia'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/home/nvidia/ros2_install'), ('COLCON_PREFIX_PATH', '/home/nvidia/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('RUNLEVEL', '3'), ('XDG_RUNTIME_DIR', '/home/nvidia/Documents/Quanser'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libstdc++.so.6'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SUDO_COMMAND', '/bin/bash'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SUDO_USER', 'nvidia'), ('OpenCV_DIR', '/usr/local/lib/cmake/opencv4'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/nvidia/ros2_ws/build/cpp_qcar'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python'), ('COLCON', '1'), ('LIBGL_DRIVERS_PATH', '/usr/lib/aarch64-linux-gnu/dri'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[5.113138] (qcar_nodes) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/qcar_nodes', 'build', '--build-base', '/home/nvidia/ros2_ws/build/qcar_nodes/build', 'install', '--record', '/home/nvidia/ros2_ws/build/qcar_nodes/install.log', '--install-scripts', '$base/lib/qcar_nodes', '--single-version-externally-managed'], 'cwd': '/home/nvidia/ros2_ws/src/qcar_nodes', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/root', 'USER': 'root', 'LANGUAGE': 'en_CA:en', 'QAL_DIR': '/home/nvidia/Documents/Quanser', 'LD_LIBRARY_PATH': '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:', 'SHLVL': '1', 'OLDPWD': '/home/nvidia/ros2_ws/src', 'HOME': '/home/nvidia', 'ROS_PYTHON_VERSION': '3', '_colcon_cd_root': '/home/nvidia/ros2_install', 'COLCON_PREFIX_PATH': '/home/nvidia/ros2_ws/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'root', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'RUNLEVEL': '3', 'XDG_RUNTIME_DIR': '/home/nvidia/Documents/Quanser', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LD_PRELOAD': '/usr/lib/aarch64-linux-gnu/libstdc++.so.6', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/dashing', 'SUDO_COMMAND': '/bin/bash', 'ROS_DOMAIN_ID': '42', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SUDO_USER': 'nvidia', 'OpenCV_DIR': '/usr/local/lib/cmake/opencv4', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/nvidia/ros2_ws/build/qcar_nodes', 'PYTHONPATH': '/home/nvidia/ros2_ws/build/qcar_nodes/prefix_override:/home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python', 'COLCON': '1', 'LIBGL_DRIVERS_PATH': '/usr/lib/aarch64-linux-gnu/dri'}, 'shell': False}
+[5.136110] (-) TimerEvent: {}
+[5.188845] (cpp_qcar) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/base_to_lidar_tf.dir/src/base_to_lidar_tf.cpp.o\x1b[0m\n'}
+[5.236322] (-) TimerEvent: {}
+[5.337740] (-) TimerEvent: {}
+[5.438778] (-) TimerEvent: {}
+[5.539568] (-) TimerEvent: {}
+[5.640352] (-) TimerEvent: {}
+[5.741111] (-) TimerEvent: {}
+[5.841864] (-) TimerEvent: {}
+[5.942606] (-) TimerEvent: {}
+[6.043343] (-) TimerEvent: {}
+[6.144169] (-) TimerEvent: {}
+[6.244910] (-) TimerEvent: {}
+[6.338096] (control_nodes) StderrLine: {'line': b"/home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.338877] (control_nodes) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[6.345061] (-) TimerEvent: {}
+[6.405474] (qcar_nodes) StderrLine: {'line': b"/home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.406163] (qcar_nodes) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[6.445226] (-) TimerEvent: {}
+[6.492354] (control_nodes) StdoutLine: {'line': b'running egg_info\n'}
+[6.494928] (control_nodes) StdoutLine: {'line': b'creating ../../build/control_nodes/control_nodes.egg-info\n'}
+[6.495723] (control_nodes) StdoutLine: {'line': b'writing ../../build/control_nodes/control_nodes.egg-info/PKG-INFO\n'}
+[6.496471] (control_nodes) StdoutLine: {'line': b'writing dependency_links to ../../build/control_nodes/control_nodes.egg-info/dependency_links.txt\n'}
+[6.497128] (control_nodes) StdoutLine: {'line': b'writing entry points to ../../build/control_nodes/control_nodes.egg-info/entry_points.txt\n'}
+[6.497854] (control_nodes) StdoutLine: {'line': b'writing requirements to ../../build/control_nodes/control_nodes.egg-info/requires.txt\n'}
+[6.498369] (control_nodes) StdoutLine: {'line': b'writing top-level names to ../../build/control_nodes/control_nodes.egg-info/top_level.txt\n'}
+[6.510287] (control_nodes) StdoutLine: {'line': b"writing manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'\n"}
+[6.518075] (control_nodes) StdoutLine: {'line': b"reading manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'\n"}
+[6.522930] (control_nodes) StdoutLine: {'line': b"writing manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'\n"}
+[6.523850] (control_nodes) StdoutLine: {'line': b'running build\n'}
+[6.524927] (control_nodes) StdoutLine: {'line': b'running build_py\n'}
+[6.525453] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/build/control_nodes/build\n'}
+[6.526111] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/build/control_nodes/build/lib\n'}
+[6.526739] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes\n'}
+[6.527232] (control_nodes) StdoutLine: {'line': b'copying control_nodes/qcar_ekf.py -> /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes\n'}
+[6.527992] (control_nodes) StdoutLine: {'line': b'copying control_nodes/__init__.py -> /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes\n'}
+[6.528630] (control_nodes) StdoutLine: {'line': b'running install\n'}
+[6.529573] (control_nodes) StderrLine: {'line': b'/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.530200] (control_nodes) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[6.535793] (control_nodes) StdoutLine: {'line': b'running install_lib\n'}
+[6.536512] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes\n'}
+[6.537098] (control_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes/qcar_ekf.py -> /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes\n'}
+[6.537729] (control_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/control_nodes/build/lib/control_nodes/__init__.py -> /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes\n'}
+[6.538327] (control_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes/qcar_ekf.py to qcar_ekf.cpython-36.pyc\n'}
+[6.541472] (control_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes/__init__.py to __init__.cpython-36.pyc\n'}
+[6.542268] (control_nodes) StdoutLine: {'line': b'running install_data\n'}
+[6.544641] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/control_nodes/share/ament_index\n'}
+[6.545558] (-) TimerEvent: {}
+[6.546800] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/control_nodes/share/ament_index/resource_index\n'}
+[6.547518] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/control_nodes/share/ament_index/resource_index/packages\n'}
+[6.548048] (control_nodes) StdoutLine: {'line': b'copying resource/control_nodes -> /home/nvidia/ros2_ws/install/control_nodes/share/ament_index/resource_index/packages\n'}
+[6.548679] (control_nodes) StdoutLine: {'line': b'copying package.xml -> /home/nvidia/ros2_ws/install/control_nodes/share/control_nodes\n'}
+[6.549183] (control_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/control_nodes/share/control_nodes/launch\n'}
+[6.549713] (control_nodes) StdoutLine: {'line': b'copying launch/qcar.launch.py -> /home/nvidia/ros2_ws/install/control_nodes/share/control_nodes/launch\n'}
+[6.550214] (control_nodes) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.553854] (control_nodes) StdoutLine: {'line': b'Copying ../../build/control_nodes/control_nodes.egg-info to /home/nvidia/ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes-0.0.0-py3.6.egg-info\n'}
+[6.558063] (control_nodes) StdoutLine: {'line': b'running install_scripts\n'}
+[6.579148] (qcar_nodes) StdoutLine: {'line': b'running egg_info\n'}
+[6.581919] (qcar_nodes) StdoutLine: {'line': b'creating ../../build/qcar_nodes/qcar_nodes.egg-info\n'}
+[6.582724] (qcar_nodes) StdoutLine: {'line': b'writing ../../build/qcar_nodes/qcar_nodes.egg-info/PKG-INFO\n'}
+[6.583491] (qcar_nodes) StdoutLine: {'line': b'writing dependency_links to ../../build/qcar_nodes/qcar_nodes.egg-info/dependency_links.txt\n'}
+[6.584514] (qcar_nodes) StdoutLine: {'line': b'writing entry points to ../../build/qcar_nodes/qcar_nodes.egg-info/entry_points.txt\n'}
+[6.585277] (qcar_nodes) StdoutLine: {'line': b'writing requirements to ../../build/qcar_nodes/qcar_nodes.egg-info/requires.txt\n'}
+[6.586451] (qcar_nodes) StdoutLine: {'line': b'writing top-level names to ../../build/qcar_nodes/qcar_nodes.egg-info/top_level.txt\n'}
+[6.593726] (qcar_nodes) StdoutLine: {'line': b"writing manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'\n"}
+[6.603708] (qcar_nodes) StdoutLine: {'line': b"reading manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'\n"}
+[6.609086] (qcar_nodes) StdoutLine: {'line': b"writing manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'\n"}
+[6.610002] (qcar_nodes) StdoutLine: {'line': b'running build\n'}
+[6.610556] (qcar_nodes) StdoutLine: {'line': b'running build_py\n'}
+[6.611606] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/build/qcar_nodes/build\n'}
+[6.612164] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/build/qcar_nodes/build/lib\n'}
+[6.612909] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.613621] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/lidar_test.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.614158] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/commandnode.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.614855] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/lidarnode.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.615569] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/__init__.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.616202] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/qcarnode.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.616911] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/Imageviewer.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.617931] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/rgbdnode.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.618885] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/ImageRecorder.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.620277] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/csinode.py -> /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[6.622064] (qcar_nodes) StdoutLine: {'line': b'running install\n'}
+[6.622860] (qcar_nodes) StderrLine: {'line': b'/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.623354] (qcar_nodes) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[6.624248] (qcar_nodes) StdoutLine: {'line': b'running install_lib\n'}
+[6.626851] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.627701] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/lidar_test.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.628575] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/commandnode.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.629294] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/lidarnode.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.630068] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/__init__.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.630733] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/qcarnode.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.631527] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/Imageviewer.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.632391] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/rgbdnode.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.633020] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/ImageRecorder.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.633695] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/csinode.py -> /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[6.634545] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/lidar_test.py to lidar_test.cpython-36.pyc\n'}
+[6.635388] (control_nodes) StdoutLine: {'line': b'Installing qcar_ekf script to /home/nvidia/ros2_ws/install/control_nodes/lib/control_nodes\n'}
+[6.636271] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/commandnode.py to commandnode.cpython-36.pyc\n'}
+[6.637078] (control_nodes) StdoutLine: {'line': b"writing list of installed files to '/home/nvidia/ros2_ws/build/control_nodes/install.log'\n"}
+[6.638938] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/lidarnode.py to lidarnode.cpython-36.pyc\n'}
+[6.642010] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/__init__.py to __init__.cpython-36.pyc\n'}
+[6.642974] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/qcarnode.py to qcarnode.cpython-36.pyc\n'}
+[6.645744] (-) TimerEvent: {}
+[6.646968] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/Imageviewer.py to Imageviewer.cpython-36.pyc\n'}
+[6.650331] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/rgbdnode.py to rgbdnode.cpython-36.pyc\n'}
+[6.653635] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/ImageRecorder.py to ImageRecorder.cpython-36.pyc\n'}
+[6.657337] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/csinode.py to csinode.cpython-36.pyc\n'}
+[6.661403] (qcar_nodes) StdoutLine: {'line': b'running install_data\n'}
+[6.663878] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/qcar_nodes/share/ament_index\n'}
+[6.664918] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/qcar_nodes/share/ament_index/resource_index\n'}
+[6.665649] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/ros2_ws/install/qcar_nodes/share/ament_index/resource_index/packages\n'}
+[6.666510] (qcar_nodes) StdoutLine: {'line': b'copying resource/qcar_nodes -> /home/nvidia/ros2_ws/install/qcar_nodes/share/ament_index/resource_index/packages\n'}
+[6.667128] (qcar_nodes) StdoutLine: {'line': b'copying package.xml -> /home/nvidia/ros2_ws/install/qcar_nodes/share/qcar_nodes\n'}
+[6.667766] (qcar_nodes) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.674809] (qcar_nodes) StdoutLine: {'line': b'Copying ../../build/qcar_nodes/qcar_nodes.egg-info to /home/nvidia/ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes-0.0.0-py3.6.egg-info\n'}
+[6.679489] (qcar_nodes) StdoutLine: {'line': b'running install_scripts\n'}
+[6.745955] (-) TimerEvent: {}
+[6.750118] (control_nodes) CommandEnded: {'returncode': 0}
+[6.763647] (qcar_nodes) StdoutLine: {'line': b'Installing command_node script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.764738] (qcar_nodes) StdoutLine: {'line': b'Installing csi_node script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.765631] (qcar_nodes) StdoutLine: {'line': b'Installing image_recorder script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.766267] (qcar_nodes) StdoutLine: {'line': b'Installing img_node script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.766802] (qcar_nodes) StdoutLine: {'line': b'Installing lidar_node script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.767393] (qcar_nodes) StdoutLine: {'line': b'Installing qcar_node script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.768257] (qcar_nodes) StdoutLine: {'line': b'Installing rgbd_node script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.769031] (qcar_nodes) StdoutLine: {'line': b'Installing test_node script to /home/nvidia/ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[6.770318] (qcar_nodes) StdoutLine: {'line': b"writing list of installed files to '/home/nvidia/ros2_ws/build/qcar_nodes/install.log'\n"}
+[6.813661] (control_nodes) JobEnded: {'identifier': 'control_nodes', 'rc': 0}
+[6.846156] (-) TimerEvent: {}
+[6.882823] (qcar_nodes) CommandEnded: {'returncode': 0}
+[6.910811] (qcar_nodes) JobEnded: {'identifier': 'qcar_nodes', 'rc': 0}
+[6.946343] (-) TimerEvent: {}
+[7.047046] (-) TimerEvent: {}
+[7.147770] (-) TimerEvent: {}
+[7.248491] (-) TimerEvent: {}
+[7.349213] (-) TimerEvent: {}
+[7.449916] (-) TimerEvent: {}
+[7.550606] (-) TimerEvent: {}
+[7.651313] (-) TimerEvent: {}
+[7.752021] (-) TimerEvent: {}
+[7.852771] (-) TimerEvent: {}
+[7.953458] (-) TimerEvent: {}
+[8.054155] (-) TimerEvent: {}
+[8.154870] (-) TimerEvent: {}
+[8.255570] (-) TimerEvent: {}
+[8.356260] (-) TimerEvent: {}
+[8.456959] (-) TimerEvent: {}
+[8.557645] (-) TimerEvent: {}
+[8.658343] (-) TimerEvent: {}
+[8.759080] (-) TimerEvent: {}
+[8.859818] (-) TimerEvent: {}
+[8.960569] (-) TimerEvent: {}
+[9.061339] (-) TimerEvent: {}
+[9.162171] (-) TimerEvent: {}
+[9.262881] (-) TimerEvent: {}
+[9.363599] (-) TimerEvent: {}
+[9.464301] (-) TimerEvent: {}
+[9.565074] (-) TimerEvent: {}
+[9.665768] (-) TimerEvent: {}
+[9.766451] (-) TimerEvent: {}
+[9.867135] (-) TimerEvent: {}
+[9.967800] (-) TimerEvent: {}
+[10.068613] (-) TimerEvent: {}
+[10.169339] (-) TimerEvent: {}
+[10.270045] (-) TimerEvent: {}
+[10.371016] (-) TimerEvent: {}
+[10.471895] (-) TimerEvent: {}
+[10.572691] (-) TimerEvent: {}
+[10.673377] (-) TimerEvent: {}
+[10.774067] (-) TimerEvent: {}
+[10.874763] (-) TimerEvent: {}
+[10.975472] (-) TimerEvent: {}
+[11.076204] (-) TimerEvent: {}
+[11.176900] (-) TimerEvent: {}
+[11.277580] (-) TimerEvent: {}
+[11.378395] (-) TimerEvent: {}
+[11.462105] (cpp_qcar) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable base_to_lidar_tf\x1b[0m\n'}
+[11.478564] (-) TimerEvent: {}
+[11.579266] (-) TimerEvent: {}
+[11.680028] (-) TimerEvent: {}
+[11.780947] (-) TimerEvent: {}
+[11.881637] (-) TimerEvent: {}
+[11.917308] (cpp_qcar) StdoutLine: {'line': b'[100%] Built target base_to_lidar_tf\n'}
+[11.935200] (cpp_qcar) CommandEnded: {'returncode': 0}
+[11.981898] (-) TimerEvent: {}
+[12.027101] (cpp_qcar) JobProgress: {'identifier': 'cpp_qcar', 'progress': 'install'}
+[12.063545] (cpp_qcar) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/nvidia/ros2_ws/build/cpp_qcar'], 'cwd': '/home/nvidia/ros2_ws/build/cpp_qcar', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LANGUAGE', 'en_CA:en'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/nvidia/ros2_ws/src'), ('HOME', '/home/nvidia'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/home/nvidia/ros2_install'), ('COLCON_PREFIX_PATH', '/home/nvidia/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('RUNLEVEL', '3'), ('XDG_RUNTIME_DIR', '/home/nvidia/Documents/Quanser'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libstdc++.so.6'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SUDO_COMMAND', '/bin/bash'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SUDO_USER', 'nvidia'), ('OpenCV_DIR', '/usr/local/lib/cmake/opencv4'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/nvidia/ros2_ws/build/cpp_qcar'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python'), ('COLCON', '1'), ('LIBGL_DRIVERS_PATH', '/usr/lib/aarch64-linux-gnu/dri'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[12.082289] (-) TimerEvent: {}
+[12.100256] (cpp_qcar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.101011] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/lib/cpp_qcar/base_to_lidar_tf\n'}
+[12.103219] (cpp_qcar) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2_ws/install/cpp_qcar/lib/cpp_qcar/base_to_lidar_tf" to ""\n'}
+[12.103762] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/ament_index/resource_index/package_run_dependencies/cpp_qcar\n'}
+[12.104327] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/ament_index/resource_index/parent_prefix_path/cpp_qcar\n'}
+[12.104953] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/environment/ament_prefix_path.sh\n'}
+[12.105430] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/environment/path.sh\n'}
+[12.105848] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/local_setup.bash\n'}
+[12.106254] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/local_setup.sh\n'}
+[12.106650] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/local_setup.zsh\n'}
+[12.107044] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/ament_index/resource_index/packages/cpp_qcar\n'}
+[12.107486] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/cmake/cpp_qcarConfig.cmake\n'}
+[12.107896] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/cmake/cpp_qcarConfig-version.cmake\n'}
+[12.108392] (cpp_qcar) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2_ws/install/cpp_qcar/share/cpp_qcar/package.xml\n'}
+[12.112763] (cpp_qcar) CommandEnded: {'returncode': 0}
+[12.182461] (-) TimerEvent: {}
+[12.266690] (cpp_qcar) JobEnded: {'identifier': 'cpp_qcar', 'rc': 0}
+[12.270748] (-) EventReactorShutdown: {}

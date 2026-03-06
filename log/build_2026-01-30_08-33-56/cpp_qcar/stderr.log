@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:87 (install):
+  install TARGETS given target "qcar_dead_reckoning_node" which does not
+  exist.
+
+[0m
+make: *** [cmake_check_build_system] Error 1

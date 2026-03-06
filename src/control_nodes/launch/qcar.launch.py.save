@@ -1,0 +1,16 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+    return LaunchDescription([
+        Nod           package='qcar_nodes',
+            node_executable='qcar_node',
+            name='qcar_node'
+        ),
+        Node(
+            package='demo_nodes_cpp',
+            node_executable='listener',
+            name='listener'
+        )
+    ])
+

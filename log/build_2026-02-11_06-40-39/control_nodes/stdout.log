@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing control_nodes.egg-info/PKG-INFO
+writing dependency_links to control_nodes.egg-info/dependency_links.txt
+writing entry points to control_nodes.egg-info/entry_points.txt
+writing requirements to control_nodes.egg-info/requires.txt
+writing top-level names to control_nodes.egg-info/top_level.txt
+reading manifest file 'control_nodes.egg-info/SOURCES.txt'
+writing manifest file 'control_nodes.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control-nodes.egg-link (link to .)
+Installing lane_detect script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+Installing qcar_ekf script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+Installing wall_follow script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+
+Installed /home/nvidia/qcar_ros2_ws/build/control_nodes
+running install_data
+copying launch/qcar.launch.py -> /home/nvidia/qcar_ros2_ws/install/control_nodes/share/control_nodes/launch

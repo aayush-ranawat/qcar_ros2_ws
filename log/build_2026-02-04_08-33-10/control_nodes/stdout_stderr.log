@@ -1,0 +1,42 @@
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  % (opt, underscore_opt)
+running develop
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/easy_install.py:159: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  EasyInstallDeprecationWarning,
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  setuptools.SetuptoolsDeprecationWarning,
+/home/nvidia/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+  PkgResourcesDeprecationWarning,
+Removing /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control-nodes.egg-link (link to .)
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  % (opt, underscore_opt)
+running egg_info
+writing ../../build/control_nodes/control_nodes.egg-info/PKG-INFO
+writing dependency_links to ../../build/control_nodes/control_nodes.egg-info/dependency_links.txt
+writing entry points to ../../build/control_nodes/control_nodes.egg-info/entry_points.txt
+writing requirements to ../../build/control_nodes/control_nodes.egg-info/requires.txt
+writing top-level names to ../../build/control_nodes/control_nodes.egg-info/top_level.txt
+reading manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'
+writing manifest file '../../build/control_nodes/control_nodes.egg-info/SOURCES.txt'
+running build
+running build_py
+copying control_nodes/wall_follow.py -> /home/nvidia/qcar_ros2_ws/build/control_nodes/build/lib/control_nodes
+running install
+/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  setuptools.SetuptoolsDeprecationWarning,
+running install_lib
+creating /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes
+copying /home/nvidia/qcar_ros2_ws/build/control_nodes/build/lib/control_nodes/qcar_ekf.py -> /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes
+copying /home/nvidia/qcar_ros2_ws/build/control_nodes/build/lib/control_nodes/__init__.py -> /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes
+copying /home/nvidia/qcar_ros2_ws/build/control_nodes/build/lib/control_nodes/wall_follow.py -> /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes
+byte-compiling /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes/qcar_ekf.py to qcar_ekf.cpython-36.pyc
+byte-compiling /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes/__init__.py to __init__.cpython-36.pyc
+byte-compiling /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes/wall_follow.py to wall_follow.cpython-36.pyc
+running install_data
+copying launch/qcar.launch.py -> /home/nvidia/qcar_ros2_ws/install/control_nodes/share/control_nodes/launch
+running install_egg_info
+Copying ../../build/control_nodes/control_nodes.egg-info to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages/control_nodes-0.0.0-py3.6.egg-info
+running install_scripts
+Installing qcar_ekf script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+Installing wall_follow script to /home/nvidia/qcar_ros2_ws/install/control_nodes/lib/control_nodes
+writing list of installed files to '/home/nvidia/qcar_ros2_ws/build/control_nodes/install.log'

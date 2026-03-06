@@ -1,0 +1,111 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(cpp_qcar)
+
+
+
+# Default to C++14 (Correct for Dashing/Ament)
+
+if(NOT CMAKE_CXX_STANDARD)
+
+  set(CMAKE_CXX_STANDARD 14)
+
+endif()
+
+
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+
+  add_compile_options(-Wall -Wextra -Wpedantic)
+
+endif()
+
+
+
+# 1. ADD NEW DEPENDENCIES HERE
+
+find_package(ament_cmake REQUIRED)
+
+find_package(rclcpp REQUIRED)
+
+find_package(tf2 REQUIRED)        # Required for transform math
+
+find_package(tf2_ros REQUIRED)    # Required for the broadcaster
+
+find_package(geometry_msgs REQUIRED)
+
+find_package(sensor_msgs REQUIRED) # Required for Imu.msg
+
+find_package(nav_msgs REQUIRED)    # Required for Odometry.msg
+
+
+
+# --- Existing Executable ---
+
+add_executable(base_to_lidar_tf src/base_to_lidar_tf.cpp)
+
+ament_target_dependencies(
+
+  base_to_lidar_tf
+
+  rclcpp
+
+  tf2_ros
+
+  geometry_msgs
+
+)
+
+
+
+# 2. ADD THE NEW DEAD RECKONING EXECUTABLE
+
+add_executable(imu_dr_node src/imu_dead_reckoning_node.cpp)
+
+ament_target_dependencies(
+
+imu_dead_reckoning_node.cpp  imu_dr_node
+
+  rclcpp
+
+  tf2
+
+  tf2_ros
+
+  geometry_msgs
+
+  sensor_msgs
+
+  nav_msgs
+
+)
+
+
+
+# 3. UPDATE THE INSTALL TARGET
+
+install(
+
+  TARGETS 
+
+  base_to_lidar_tf
+
+  qcar_dead_reckoning_node
+
+  DESTINATION lib/${PROJECT_NAME}
+
+)
+
+
+
+if(BUILD_TESTING)
+
+  find_package(ament_lint_auto REQUIRED)
+
+  ament_lint_auto_find_test_dependencies()
+
+endif()
+
+
+
+ament_package()

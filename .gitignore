@@ -1,0 +1,11 @@
+.vscode/
+packages.microsoft.gpg
+**/__pycache__/**
+*.db3
+# ROS bags
+*.db3
+*.mcap
+rosbag2_*/
+recordings/
+bags/
+

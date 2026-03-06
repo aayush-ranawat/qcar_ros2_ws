@@ -1,0 +1,6 @@
+Invoking command in '/home/nvidia/ros2_ws/build/cpp_qcar': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/ros2_ws/src/cpp_qcar -DCMAKE_INSTALL_PREFIX=/home/nvidia/ros2_ws/install/cpp_qcar
+Invoked command in '/home/nvidia/ros2_ws/build/cpp_qcar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/ros2_ws/src/cpp_qcar -DCMAKE_INSTALL_PREFIX=/home/nvidia/ros2_ws/install/cpp_qcar
+Invoking command in '/home/nvidia/ros2_ws/build/cpp_qcar': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/cpp_qcar -- -j4 -l4
+Invoked command in '/home/nvidia/ros2_ws/build/cpp_qcar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/ros2_ws/build/cpp_qcar -- -j4 -l4
+Invoking command in '/home/nvidia/ros2_ws/build/cpp_qcar': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/ros2_ws/build/cpp_qcar
+Invoked command in '/home/nvidia/ros2_ws/build/cpp_qcar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/ros2_ws/build/cpp_qcar

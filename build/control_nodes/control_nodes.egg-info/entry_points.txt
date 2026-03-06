@@ -1,0 +1,5 @@
+[console_scripts]
+lane_detect = control_nodes.lane_detect:main
+qcar_ekf = control_nodes.qcar_ekf:main
+wall_follow = control_nodes.wall_follow:main
+
