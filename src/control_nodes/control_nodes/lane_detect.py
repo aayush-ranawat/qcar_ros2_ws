@@ -12,8 +12,7 @@ import time
 
 from lane_detection.python.lane_detect import *
 
-
-from sensor_msgs.msg import Image,CompressedImage
+from sensor_msgs.msg import Image, CompressedImage
 from cv_bridge import CvBridge
 #endregion
 
@@ -27,95 +26,92 @@ class lane_detect(Node):
         # test out making custom QoS profile:
         self.qcar_qos_profile = QoSProfile(
                 reliability   = QoSReliabilityPolicy.BEST_EFFORT,
-                history 	  = QoSHistoryPolicy.KEEP_LAST,
+                history       = QoSHistoryPolicy.KEEP_LAST,
                 durability    = QoSDurabilityPolicy.VOLATILE,
-                depth 		  = 10)
+                depth         = 10)
         
-
-
+        # 1. Create the window first
         cv2.namedWindow("frame")
 
-        # # Register mouse callback ONCE
-        # cv2.setMouseCallback("frame", self.get_hsv_value)
+        # 2. Register mouse callback ONCE pointing to our new function
+        cv2.setMouseCallback("frame", self.get_click_coordinates)
 
-        self.c=0
+       
         
-
-        topicName="/qcar/csi_front"
-        # topicName="/qcar/rgbd_color"
-
+        # 3. Make the resize factor a class attribute so the callback can use it
+        self.factor = 1
+        
+        topicName = "/qcar/csi_front"
 
          # start counter for time delta
         self.startTime = time.perf_counter()
         self.bridge    = CvBridge()
         
-
-
         self.subscription = self.create_subscription(CompressedImage,
                                                         str(topicName),
                                                         self.Compressed_Image_callback,
                                                         self.qcar_qos_profile)
         
-
-
-    def Compressed_Image_callback(self,data):
-
+    def Compressed_Image_callback(self, data):
         # Convert compressed image msg to cv2 format
         currentImage = self.bridge.compressed_imgmsg_to_cv2(data)
 
-        #Display image using cv2
+        # Display image using cv2
         self.Image_display(currentImage)
 
-
-
     def Image_display(self, currentFrame):
-        # print(currentFrame.shape)
-        self.frame=currentFrame
+        self.frame = currentFrame
 
-        if self.c==0:
-            cv2.imwrite("lane_homography.png",currentFrame)
-            self.c+=1
+
+                # Define source and destination points
+        srcPoints = np.array([[100, 100], [150, 100], [150, 150], [100, 150]], dtype=np.float32)
+        dstPoints = np.array([[200, 200], [250, 200], [250, 250], [200, 250]], dtype=np.float32)
+
+        # Compute homography matrix
+        H, mask = cv2.findHomography(srcPoints, dstPoints, cv2.RANSAC, 5.0)
+
+        height, width = self.frame.shape[:2]
+
+
+        warped_frame = cv2.warpPerspective(self.frame, H, (width, height))
+
+        warped_frame= cv2.resize(currentFrame,(int(640 * self.factor), int(480 * self.factor)), interpolation=cv2.INTER_AREA)
 
         
-        # lane=Colour_based_lane_detection(currentFrame,resolution=(480,640))
 
-        # left,right,tot,hsv=lane.masked_affine()
-        # lane.extract_lane_parameters()
-    
-        # # print(lane.parameter_l,lane.parameter_r)
 
-        # mark=lane.visulaise()
-        # # print(resized.shape)
-        factor=0.2
-        small = cv2.resize(currentFrame, (int(640*factor), int(480*factor)), interpolation=cv2.INTER_AREA)
-        # mark = cv2.resize(mark, (int(640*factor), int(480*factor)), interpolation=cv2.INTER_AREA)
+
+
+        
+
+        
+
+        
+
+        # Use the class attribute self.factor for resizing
+        small = cv2.resize(currentFrame, (int(640 * self.factor), int(480 * self.factor)), interpolation=cv2.INTER_AREA)
+
+        
 
         cv2.imshow("frame", small)
-       
-
-
-
+        cv2.imshow("wraped_frame",warped_frame)
         cv2.waitKey(1)
 
+    # 4. Define the active callback function for mouse events
+    def get_click_coordinates(self, event, x, y, flags, param):
+        if event == cv2.EVENT_LBUTTONDOWN and hasattr(self, 'frame') and self.frame is not None:
+            
+            # Scale coordinates back up to match the original image size
+            orig_x = int(x / self.factor)
+            orig_y = int(y / self.factor)
 
-    # def get_hsv_value(self, event, x, y, flags, param):
+            # Log both the window coordinates and the true image coordinates
+            self.get_logger().info(f"Clicked Window: (x={x}, y={y}) | Original Frame: (x={orig_x}, y={orig_y})")
 
-    #     if event == cv2.EVENT_LBUTTONDOWN and self.frame is not None:
-
-    #         bgr = self.frame[y, x]
-    #         hsv = cv2.cvtColor(
-    #             np.uint8([[bgr]]),
-    #             cv2.COLOR_BGR2HSV
-    #         )[0][0]
-
-    #         self.get_logger().info(f"Clicked HSV: {hsv}")
-
-
-
-
-
-
-
+            # Optional: Keep the HSV/BGR extraction if you still need it
+            # bgr = self.frame[orig_y, orig_x]
+            # hsv = cv2.cvtColor(np.uint8([[bgr]]), cv2.COLOR_BGR2HSV)[0][0]
+            # self.get_logger().info(f"HSV at this point: {hsv}")
 
 def main(args=None):
     rclpy.init(args=args)
@@ -125,7 +121,6 @@ def main(args=None):
 
     lane_detect_node.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
