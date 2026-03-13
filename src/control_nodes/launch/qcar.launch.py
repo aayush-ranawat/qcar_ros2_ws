@@ -8,11 +8,11 @@ def generate_launch_description():
             node_executable='qcar_node',
             name='qcar_node'
         ),
-        Node(
-            package='qcar_nodes',
-            node_executable='command_node',
-            name='command'
-        ),
+        # Node(
+        #     package='qcar_nodes',
+        #     node_executable='command_node',
+        #     name='command'
+        # ),
 
         # Node(package='qcar_nodes',
         #      node_executable='lidar_node',

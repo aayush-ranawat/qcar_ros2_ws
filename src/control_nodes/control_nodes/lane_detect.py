@@ -14,6 +14,8 @@ from lane_detection.python.lane_detect import *
 
 from sensor_msgs.msg import Image, CompressedImage
 from cv_bridge import CvBridge
+
+from geometry_msgs.msg import Vector3Stamped
 #endregion
 
 # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -22,6 +24,10 @@ from cv_bridge import CvBridge
 class lane_detect(Node):
     def __init__(self):
         super().__init__('lane_detect')
+
+
+        self.cmdPublisher = self.create_publisher(Vector3Stamped,
+												'/qcar/user_command', 10)
 
 
 
@@ -109,11 +115,18 @@ class lane_detect(Node):
 
         # 3. Calculate start and end points to draw the line
         # We use a large multiplier (like 1000) for 't' to ensure the line stretches off the screen
-        lefty = int((-x * vy / vx) + y)
-        righty = int(((warped_frame.shape[1] - x) * vy / vx) + y)
 
-        point1 = (0, lefty)
-        point2 = (warped_frame.shape[1] - 1, righty)
+
+        try: 
+            lefty = int((-x * vy / vx) + y)
+            righty = int(((warped_frame.shape[1] - x) * vy / vx) + y)
+
+            point1 = (0, lefty)
+            point2 = (warped_frame.shape[1] - 1, righty)
+
+        except:
+
+            return
 
 
 
@@ -129,7 +142,43 @@ class lane_detect(Node):
 
         angle= np.degrees(np.arctan2(vy,vx))
 
-        self.get_logger().info(f"angle in degree is {angle}")
+        # self.get_logger().info(f"angle in degree is {angle}")
+
+
+        if angle>=0:
+            theta_e= 90 - angle
+        
+        else:
+            theta_e= 90 + angle
+
+
+        lateral_e = d/4 - 20
+
+
+
+        delta = 0.01*theta_e + 0.2 * np.arctan( 1*lateral_e)
+
+         
+
+
+
+
+        
+
+
+        
+        self.throttleCommand, self.steeringCommand=     0.07   ,   delta
+        
+        self.userCommand  = [self.throttleCommand, self.steeringCommand]
+
+        commandPublisher = Vector3Stamped()
+        commandPublisher.header.stamp = self.get_clock().now().to_msg()
+        commandPublisher.header.frame_id = 'command_input'
+        commandPublisher.vector.x = float(self.userCommand[0])
+        commandPublisher.vector.y = float(self.userCommand[1])
+
+
+        self.cmdPublisher.publish(commandPublisher)
 
 
 
@@ -167,9 +216,9 @@ class lane_detect(Node):
 
         
 
-        cv2.imshow("frame", small)
-        cv2.imshow("wraped_frame",warped_frame)
-        cv2.waitKey(1)
+        # cv2.imshow("frame", small)
+        # cv2.imshow("wraped_frame",warped_frame)
+        # cv2.waitKey(1)
 
 
 

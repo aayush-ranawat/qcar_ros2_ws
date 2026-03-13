@@ -1,0 +1,2 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/nvidia/qcar_ros2_ws/build/slam_toolbox/CMakeCache.txt is different than the directory /home/nvidia/ros2_ws/build/slam_toolbox where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source "/home/nvidia/qcar_ros2_ws/src/slam_toolbox/CMakeLists.txt" does not match the source "/home/nvidia/ros2_ws/src/slam_toolbox/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.[0m
