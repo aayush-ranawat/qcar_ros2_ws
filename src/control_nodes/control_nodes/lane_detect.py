@@ -23,6 +23,14 @@ class lane_detect(Node):
     def __init__(self):
         super().__init__('lane_detect')
 
+
+
+                # Define source and destination points
+        srcPoints = np.array([[32 , 331], [673, 321], [177,279], [499,276] , [240 ,259] , [439,254]], dtype=np.float32)
+        dstPoints = np.array([[220,470], [420, 470], [220,350], [420 , 350 ], [220 , 230 ] , [420 , 230]], dtype=np.float32)
+                 # Compute homography matrix
+        self.H, mask = cv2.findHomography(srcPoints, dstPoints, cv2.RANSAC, 5.0)
+
         # test out making custom QoS profile:
         self.qcar_qos_profile = QoSProfile(
                 reliability   = QoSReliabilityPolicy.BEST_EFFORT,
@@ -59,23 +67,89 @@ class lane_detect(Node):
         # Display image using cv2
         self.Image_display(currentImage)
 
+
+    
+
     def Image_display(self, currentFrame):
         self.frame = currentFrame
-
-
-                # Define source and destination points
-        srcPoints = np.array([[100, 100], [150, 100], [150, 150], [100, 150]], dtype=np.float32)
-        dstPoints = np.array([[200, 200], [250, 200], [250, 250], [200, 250]], dtype=np.float32)
-
-        # Compute homography matrix
-        H, mask = cv2.findHomography(srcPoints, dstPoints, cv2.RANSAC, 5.0)
 
         height, width = self.frame.shape[:2]
 
 
-        warped_frame = cv2.warpPerspective(self.frame, H, (width, height))
+        
 
-        warped_frame= cv2.resize(currentFrame,(int(640 * self.factor), int(480 * self.factor)), interpolation=cv2.INTER_AREA)
+        lane=Colour_based_lane_detection(currentFrame,resolution=(480,640))
+
+        left,right,tot,hsv=lane.masked_affine()
+        left_am,right_am=lane.extract_lane_parameters()
+
+        wrap_left=cv2.warpPerspective(left_am,self.H,(width,height))
+
+        left=np.where(wrap_left>0)
+    
+        # print(lane.parameter_l,lane.parameter_r)
+
+        # mark=lane.visulaise()
+
+        
+
+        
+
+
+        warped_frame = cv2.warpPerspective(self.frame,self.H, (width, height))
+
+
+        left_points = np.column_stack((left[1], left[0]))
+
+        
+
+                # 2. Fit the line
+        # Note: OpenCV returns these as 1D arrays, so we unpack them like this:
+        [vx], [vy], [x], [y] = cv2.fitLine(left_points, cv2.DIST_L2, 0, 0.01, 0.01)
+
+        # 3. Calculate start and end points to draw the line
+        # We use a large multiplier (like 1000) for 't' to ensure the line stretches off the screen
+        lefty = int((-x * vy / vx) + y)
+        righty = int(((warped_frame.shape[1] - x) * vy / vx) + y)
+
+        point1 = (0, lefty)
+        point2 = (warped_frame.shape[1] - 1, righty)
+
+
+
+
+        point= (320, 470)
+
+        line_coff= ( vy , -vx , vx * y - vy * x)
+
+
+        d = self.distance_standard_form(point , line_coff)
+
+        # self.get_logger().info(f"the distance is {d/4}")
+
+        angle= np.degrees(np.arctan2(vy,vx))
+
+        self.get_logger().info(f"angle in degree is {angle}")
+
+
+
+
+
+
+
+
+
+        # 4. Draw the fitted line
+        cv2.line(warped_frame, point1, point2, (0, 255, 0), 2)
+
+
+
+        cv2.line(warped_frame, (220,470), (220,230), (0, 255, 0) , 3)
+        cv2.line(warped_frame, (420,470), (420,230), (0,0, 255) , 3)
+
+
+
+        warped_frame= cv2.resize(warped_frame,(int(640 * self.factor), int(480 * self.factor)), interpolation=cv2.INTER_AREA)
 
         
 
@@ -96,6 +170,25 @@ class lane_detect(Node):
         cv2.imshow("frame", small)
         cv2.imshow("wraped_frame",warped_frame)
         cv2.waitKey(1)
+
+
+
+    def distance_standard_form(self,point, line_coeffs):
+        """
+        point: a tuple (x0, y0)
+        line_coeffs: a tuple (A, B, C) representing Ax + By + C = 0
+        """
+        x0, y0 = point
+        A, B, C = line_coeffs
+        
+        numerator = (A * x0 + B * y0 + C)
+        denominator = np.sqrt(A**2 + B**2)
+        
+        return numerator / denominator
+
+
+
+
 
     # 4. Define the active callback function for mouse events
     def get_click_coordinates(self, event, x, y, flags, param):
