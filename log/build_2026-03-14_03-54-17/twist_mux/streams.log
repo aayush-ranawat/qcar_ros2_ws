@@ -1,0 +1,41 @@
+[0.049s] Invoking command in '/home/nvidia/qcar_ros2_ws/build/twist_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/qcar_ros2_ws/src/twist_mux -DCMAKE_INSTALL_PREFIX=/home/nvidia/qcar_ros2_ws/install/twist_mux
+[0.094s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[0.218s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.219s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.408s] -- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)
+[1.506s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[1.668s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[1.675s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.680s] -- Looking for pthread.h
+[1.870s] -- Looking for pthread.h - found
+[1.871s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.046s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.047s] -- Looking for pthread_create in pthreads
+[2.203s] -- Looking for pthread_create in pthreads - not found
+[2.203s] -- Looking for pthread_create in pthread
+[2.379s] -- Looking for pthread_create in pthread - found
+[2.381s] -- Found Threads: TRUE  
+[2.502s] -- Found std_msgs: 0.7.1 (/opt/ros/dashing/share/std_msgs/cmake)
+[2.524s] -- Found geometry_msgs: 0.7.1 (/opt/ros/dashing/share/geometry_msgs/cmake)
+[2.547s] -- Found visualization_msgs: 0.7.1 (/opt/ros/dashing/share/visualization_msgs/cmake)
+[2.619s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[2.620s]   By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this
+[2.620s]   project has asked CMake to find a package configuration file provided by
+[2.620s]   "diagnostic_updater", but CMake did not find one.
+[2.621s] 
+[2.621s]   Could not find a package configuration file provided by
+[2.622s]   "diagnostic_updater" with any of the following names:
+[2.622s] 
+[2.622s]     diagnostic_updaterConfig.cmake
+[2.623s]     diagnostic_updater-config.cmake
+[2.623s] 
+[2.624s]   Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or
+[2.624s]   set "diagnostic_updater_DIR" to a directory containing one of the above
+[2.624s]   files.  If "diagnostic_updater" provides a separate development package or
+[2.625s]   SDK, be sure it has been installed.
+[2.625s] 
+[2.626s] -- Configuring incomplete, errors occurred!
+[2.626s] See also "/home/nvidia/qcar_ros2_ws/build/twist_mux/CMakeFiles/CMakeOutput.log".
+[2.627s] See also "/home/nvidia/qcar_ros2_ws/build/twist_mux/CMakeFiles/CMakeError.log".
+[2.627s] [0m
+[2.630s] Invoked command in '/home/nvidia/qcar_ros2_ws/build/twist_mux' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake /home/nvidia/qcar_ros2_ws/src/twist_mux -DCMAKE_INSTALL_PREFIX=/home/nvidia/qcar_ros2_ws/install/twist_mux

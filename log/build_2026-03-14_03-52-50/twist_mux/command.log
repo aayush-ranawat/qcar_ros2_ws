@@ -1,0 +1,2 @@
+Invoking command in '/home/nvidia/qcar_ros2_ws/build/twist_mux': /usr/local/bin/cmake /home/nvidia/qcar_ros2_ws/src/twist_mux -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nvidia/qcar_ros2_ws/install/twist_mux
+Invoked command in '/home/nvidia/qcar_ros2_ws/build/twist_mux' returned '1': /usr/local/bin/cmake /home/nvidia/qcar_ros2_ws/src/twist_mux -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nvidia/qcar_ros2_ws/install/twist_mux

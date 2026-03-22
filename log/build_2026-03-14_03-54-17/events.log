@@ -1,0 +1,77 @@
+[0.000000] (-) TimerEvent: {}
+[0.002547] (-) JobUnselected: {'identifier': 'control_nodes'}
+[0.003354] (-) JobUnselected: {'identifier': 'cpp_qcar'}
+[0.005112] (-) JobUnselected: {'identifier': 'qcar_nodes'}
+[0.005308] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.005591] (twist_mux) JobQueued: {'identifier': 'twist_mux', 'dependencies': OrderedDict()}
+[0.005736] (twist_mux) JobStarted: {'identifier': 'twist_mux'}
+[0.049982] (twist_mux) JobProgress: {'identifier': 'twist_mux', 'progress': 'cmake'}
+[0.051903] (twist_mux) Command: {'cmd': ['/usr/local/bin/cmake', '/home/nvidia/qcar_ros2_ws/src/twist_mux', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/qcar_ros2_ws/install/twist_mux'], 'cwd': '/home/nvidia/qcar_ros2_ws/build/twist_mux', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LANGUAGE', 'en_CA:en'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('LD_LIBRARY_PATH', '/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/qcar_ros2_ws/src/twist_mux'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/home/nvidia/ros2_install'), ('COLCON_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('RUNLEVEL', '3'), ('XDG_RUNTIME_DIR', '/home/nvidia/Documents/Quanser'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libstdc++.so.6'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing'), ('SUDO_COMMAND', '/bin/bash'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SUDO_USER', 'nvidia'), ('OpenCV_DIR', '/usr/local/lib/cmake/opencv4'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/nvidia/qcar_ros2_ws/build/twist_mux'), ('PYTHONPATH', '/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/control_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python'), ('COLCON', '1'), ('LIBGL_DRIVERS_PATH', '/usr/lib/aarch64-linux-gnu/dri'), ('CMAKE_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install/slam_toolbox:/home/nvidia/qcar_ros2_ws/install/cpp_qcar:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing')]), 'shell': False}
+[0.099097] (twist_mux) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[0.099968] (-) TimerEvent: {}
+[0.200549] (-) TimerEvent: {}
+[0.223280] (twist_mux) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[0.224051] (twist_mux) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.300702] (-) TimerEvent: {}
+[0.401339] (-) TimerEvent: {}
+[0.501989] (-) TimerEvent: {}
+[0.602599] (-) TimerEvent: {}
+[0.703238] (-) TimerEvent: {}
+[0.803885] (-) TimerEvent: {}
+[0.904519] (-) TimerEvent: {}
+[1.005205] (-) TimerEvent: {}
+[1.105967] (-) TimerEvent: {}
+[1.206563] (-) TimerEvent: {}
+[1.307252] (-) TimerEvent: {}
+[1.407914] (-) TimerEvent: {}
+[1.413294] (twist_mux) StdoutLine: {'line': b'-- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[1.508089] (-) TimerEvent: {}
+[1.511394] (twist_mux) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[1.608248] (-) TimerEvent: {}
+[1.673759] (twist_mux) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[1.679945] (twist_mux) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.685031] (twist_mux) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.708518] (-) TimerEvent: {}
+[1.809680] (-) TimerEvent: {}
+[1.874929] (twist_mux) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.875982] (twist_mux) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.909880] (-) TimerEvent: {}
+[2.010813] (-) TimerEvent: {}
+[2.051488] (twist_mux) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[2.052188] (twist_mux) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.110957] (-) TimerEvent: {}
+[2.207731] (twist_mux) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.208681] (twist_mux) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.211190] (-) TimerEvent: {}
+[2.312041] (-) TimerEvent: {}
+[2.384028] (twist_mux) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.386767] (twist_mux) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.412189] (-) TimerEvent: {}
+[2.506887] (twist_mux) StdoutLine: {'line': b'-- Found std_msgs: 0.7.1 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[2.512331] (-) TimerEvent: {}
+[2.528926] (twist_mux) StdoutLine: {'line': b'-- Found geometry_msgs: 0.7.1 (/opt/ros/dashing/share/geometry_msgs/cmake)\n'}
+[2.552801] (twist_mux) StdoutLine: {'line': b'-- Found visualization_msgs: 0.7.1 (/opt/ros/dashing/share/visualization_msgs/cmake)\n'}
+[2.612501] (-) TimerEvent: {}
+[2.624280] (twist_mux) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (find_package):\n'}
+[2.625097] (twist_mux) StderrLine: {'line': b'  By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this\n'}
+[2.625531] (twist_mux) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[2.625951] (twist_mux) StderrLine: {'line': b'  "diagnostic_updater", but CMake did not find one.\n'}
+[2.626338] (twist_mux) StderrLine: {'line': b'\n'}
+[2.626704] (twist_mux) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[2.627150] (twist_mux) StderrLine: {'line': b'  "diagnostic_updater" with any of the following names:\n'}
+[2.627553] (twist_mux) StderrLine: {'line': b'\n'}
+[2.627930] (twist_mux) StderrLine: {'line': b'    diagnostic_updaterConfig.cmake\n'}
+[2.628339] (twist_mux) StderrLine: {'line': b'    diagnostic_updater-config.cmake\n'}
+[2.628717] (twist_mux) StderrLine: {'line': b'\n'}
+[2.629091] (twist_mux) StderrLine: {'line': b'  Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or\n'}
+[2.629490] (twist_mux) StderrLine: {'line': b'  set "diagnostic_updater_DIR" to a directory containing one of the above\n'}
+[2.629888] (twist_mux) StderrLine: {'line': b'  files.  If "diagnostic_updater" provides a separate development package or\n'}
+[2.630300] (twist_mux) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[2.630733] (twist_mux) StderrLine: {'line': b'\n'}
+[2.631176] (twist_mux) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.631603] (twist_mux) StdoutLine: {'line': b'See also "/home/nvidia/qcar_ros2_ws/build/twist_mux/CMakeFiles/CMakeOutput.log".\n'}
+[2.631991] (twist_mux) StdoutLine: {'line': b'See also "/home/nvidia/qcar_ros2_ws/build/twist_mux/CMakeFiles/CMakeError.log".\n'}
+[2.632628] (twist_mux) StderrLine: {'line': b'\x1b[0m\n'}
+[2.634521] (twist_mux) CommandEnded: {'returncode': 1}
+[2.698828] (twist_mux) JobEnded: {'identifier': 'twist_mux', 'rc': 1}
+[2.710921] (-) EventReactorShutdown: {}

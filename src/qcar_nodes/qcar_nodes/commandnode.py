@@ -44,6 +44,7 @@ class CommandNode(Node):
 		# check if there is new data from the logitech gamepad
 		new = self.gpad.read()
 
+
 		# Define user commands based on new signals
 		if new and self.gpad.buttonLeft == 1:
 			# print("command recieved")
@@ -71,7 +72,7 @@ class CommandNode(Node):
 		# 	.format(self.gpad.up, self.gpad.right, self.gpad.down, self.gpad.left))
 	def process_command(self, new):
 
-		if new:
+		if new  :
 			commandPublisher = Vector3Stamped()
 			commandPublisher.header.stamp = self.get_clock().now().to_msg()
 			commandPublisher.header.frame_id = 'command_input'
@@ -79,13 +80,14 @@ class CommandNode(Node):
 			commandPublisher.vector.y = float(self.userCommand[1])
 			self.gpadPublisher.publish(commandPublisher)
 		else:
-			commandPublisher = Vector3Stamped()
-			commandPublisher.header.stamp = self.get_clock().now().to_msg()
-			commandPublisher.header.frame_id = 'command_input'
-			commandPublisher.vector.x = float(self.userCommand[0])
-			commandPublisher.vector.y = float(self.userCommand[1])
+			pass
+			# commandPublisher = Vector3Stamped()
+			# commandPublisher.header.stamp = self.get_clock().now().to_msg()
+			# commandPublisher.header.frame_id = 'command_input'
+			# commandPublisher.vector.x = float(self.userCommand[0])
+			# commandPublisher.vector.y = float(self.userCommand[1])
 			
-			self.gpadPublisher.publish(commandPublisher)
+			# self.gpadPublisher.publish(commandPublisher)
 
 	def stop_gampad(self):
 		self.gpad.terminate()
