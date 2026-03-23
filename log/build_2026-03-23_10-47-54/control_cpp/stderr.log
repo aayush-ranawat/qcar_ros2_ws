@@ -1,0 +1,4 @@
+[01m[K/home/nvidia/qcar_ros2_ws/src/control_cpp/src/lane_detect_node.cpp:[m[K In static member function ‘[01m[Kstatic void LaneDetect::onMouseStatic(int, int, int, int, void*)[m[K’:
+[01m[K/home/nvidia/qcar_ros2_ws/src/control_cpp/src/lane_detect_node.cpp:37:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     static void onMouseStatic(int event, int x, int y, int [01;35m[Kflags[m[K, void* userdata) {
+                                                            [01;35m[K^~~~~[m[K

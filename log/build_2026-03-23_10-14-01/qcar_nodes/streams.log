@@ -1,0 +1,69 @@
+[3.360s] Invoking command in '/home/nvidia/qcar_ros2_ws/src/qcar_nodes': PYTHONPATH=/home/nvidia/qcar_ros2_ws/build/qcar_nodes/prefix_override:/home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/qcar_nodes build --build-base /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build install --record /home/nvidia/qcar_ros2_ws/build/qcar_nodes/install.log --install-scripts $base/lib/qcar_nodes --single-version-externally-managed
+[4.526s] /home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.526s]   % (opt, underscore_opt)
+[4.659s] running egg_info
+[4.661s] creating ../../build/qcar_nodes/qcar_nodes.egg-info
+[4.661s] writing ../../build/qcar_nodes/qcar_nodes.egg-info/PKG-INFO
+[4.662s] writing dependency_links to ../../build/qcar_nodes/qcar_nodes.egg-info/dependency_links.txt
+[4.663s] writing entry points to ../../build/qcar_nodes/qcar_nodes.egg-info/entry_points.txt
+[4.663s] writing requirements to ../../build/qcar_nodes/qcar_nodes.egg-info/requires.txt
+[4.664s] writing top-level names to ../../build/qcar_nodes/qcar_nodes.egg-info/top_level.txt
+[4.670s] writing manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'
+[4.677s] reading manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'
+[4.681s] writing manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'
+[4.681s] running build
+[4.682s] running build_py
+[4.682s] creating /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build
+[4.683s] creating /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib
+[4.683s] creating /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.684s] copying qcar_nodes/lidar_test.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.684s] copying qcar_nodes/commandnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.684s] copying qcar_nodes/lidarnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.685s] copying qcar_nodes/__init__.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.685s] copying qcar_nodes/qcarnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.686s] copying qcar_nodes/Imageviewer.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.686s] copying qcar_nodes/rgbdnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.686s] copying qcar_nodes/ImageRecorder.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.687s] copying qcar_nodes/csinode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes
+[4.687s] running install
+[4.688s] /home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.688s]   setuptools.SetuptoolsDeprecationWarning,
+[4.689s] running install_lib
+[4.691s] creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.692s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/lidar_test.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.692s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/commandnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.692s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/lidarnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.693s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/__init__.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.693s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/qcarnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.694s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/Imageviewer.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.694s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/rgbdnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.694s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/ImageRecorder.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.695s] copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/csinode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes
+[4.696s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/lidar_test.py to lidar_test.cpython-36.pyc
+[4.698s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/commandnode.py to commandnode.cpython-36.pyc
+[4.699s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/lidarnode.py to lidarnode.cpython-36.pyc
+[4.702s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/__init__.py to __init__.cpython-36.pyc
+[4.702s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/qcarnode.py to qcarnode.cpython-36.pyc
+[4.705s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/Imageviewer.py to Imageviewer.cpython-36.pyc
+[4.707s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/rgbdnode.py to rgbdnode.cpython-36.pyc
+[4.710s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/ImageRecorder.py to ImageRecorder.cpython-36.pyc
+[4.712s] byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/csinode.py to csinode.cpython-36.pyc
+[4.715s] running install_data
+[4.717s] creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index
+[4.718s] creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index/resource_index
+[4.718s] creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index/resource_index/packages
+[4.719s] copying resource/qcar_nodes -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index/resource_index/packages
+[4.719s] copying package.xml -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/qcar_nodes
+[4.720s] running install_egg_info
+[4.724s] Copying ../../build/qcar_nodes/qcar_nodes.egg-info to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes-0.0.0-py3.6.egg-info
+[4.728s] running install_scripts
+[4.796s] Installing command_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.797s] Installing csi_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.797s] Installing image_recorder script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.798s] Installing img_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.798s] Installing lidar_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.798s] Installing qcar_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.799s] Installing rgbd_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.799s] Installing test_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes
+[4.800s] writing list of installed files to '/home/nvidia/qcar_ros2_ws/build/qcar_nodes/install.log'
+[4.905s] Invoked command in '/home/nvidia/qcar_ros2_ws/src/qcar_nodes' returned '0': PYTHONPATH=/home/nvidia/qcar_ros2_ws/build/qcar_nodes/prefix_override:/home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/qcar_nodes build --build-base /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build install --record /home/nvidia/qcar_ros2_ws/build/qcar_nodes/install.log --install-scripts $base/lib/qcar_nodes --single-version-externally-managed

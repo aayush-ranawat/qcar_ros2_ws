@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/lane_detect_node.dir/src/lane_detect_node.cpp.o[0m
+[01m[K/home/nvidia/qcar_ros2_ws/src/control_cpp/src/lane_detect_node.cpp:[m[K In static member function ‘[01m[Kstatic void LaneDetect::onMouseStatic(int, int, int, int, void*)[m[K’:
+[01m[K/home/nvidia/qcar_ros2_ws/src/control_cpp/src/lane_detect_node.cpp:37:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     static void onMouseStatic(int event, int x, int y, int [01;35m[Kflags[m[K, void* userdata) {
+                                                            [01;35m[K^~~~~[m[K
+[100%] [32m[1mLinking CXX executable lane_detect_node[0m
+[100%] Built target lane_detect_node
+-- Install configuration: ""
+-- Installing: /home/nvidia/qcar_ros2_ws/install/control_cpp/lib/control_cpp/lane_detect_node
+-- Set runtime path of "/home/nvidia/qcar_ros2_ws/install/control_cpp/lib/control_cpp/lane_detect_node" to ""
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/package_run_dependencies/control_cpp
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/parent_prefix_path/control_cpp
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/path.sh
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.bash
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.sh
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.zsh
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/packages/control_cpp
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig.cmake
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig-version.cmake
+-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/package.xml

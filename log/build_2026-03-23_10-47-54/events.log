@@ -1,0 +1,149 @@
+[0.000000] (-) TimerEvent: {}
+[0.001485] (-) JobUnselected: {'identifier': 'control_nodes'}
+[0.002032] (-) JobUnselected: {'identifier': 'cpp_qcar'}
+[0.003344] (-) JobUnselected: {'identifier': 'qcar_nodes'}
+[0.003528] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.003812] (control_cpp) JobQueued: {'identifier': 'control_cpp', 'dependencies': OrderedDict()}
+[0.003950] (control_cpp) JobStarted: {'identifier': 'control_cpp'}
+[0.042677] (control_cpp) JobProgress: {'identifier': 'control_cpp', 'progress': 'cmake'}
+[0.045029] (control_cpp) JobProgress: {'identifier': 'control_cpp', 'progress': 'build'}
+[0.047598] (control_cpp) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/nvidia/qcar_ros2_ws/build/control_cpp', '--', '-j4', '-l4'], 'cwd': '/home/nvidia/qcar_ros2_ws/build/control_cpp', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LANGUAGE', 'en_CA:en'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('LD_LIBRARY_PATH', '/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/nvidia/qcar_ros2_ws/src/control_cpp'), ('HOME', '/home/nvidia'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/home/nvidia/ros2_install'), ('COLCON_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('RUNLEVEL', '3'), ('XDG_RUNTIME_DIR', '/home/nvidia/Documents/Quanser'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libstdc++.so.6'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install/control_cpp:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing'), ('SUDO_COMMAND', '/bin/bash'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SUDO_USER', 'nvidia'), ('OpenCV_DIR', '/usr/local/lib/cmake/opencv4'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/nvidia/qcar_ros2_ws/build/control_cpp'), ('PYTHONPATH', '/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/control_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python'), ('COLCON', '1'), ('LIBGL_DRIVERS_PATH', '/usr/lib/aarch64-linux-gnu/dri'), ('CMAKE_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install/control_cpp:/home/nvidia/qcar_ros2_ws/install/slam_toolbox:/home/nvidia/qcar_ros2_ws/install/cpp_qcar:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing')]), 'shell': False}
+[0.099198] (-) TimerEvent: {}
+[0.153331] (control_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lane_detect_node.dir/src/lane_detect_node.cpp.o\x1b[0m\n'}
+[0.199342] (-) TimerEvent: {}
+[0.300157] (-) TimerEvent: {}
+[0.401200] (-) TimerEvent: {}
+[0.501974] (-) TimerEvent: {}
+[0.602674] (-) TimerEvent: {}
+[0.703377] (-) TimerEvent: {}
+[0.804063] (-) TimerEvent: {}
+[0.904744] (-) TimerEvent: {}
+[1.005425] (-) TimerEvent: {}
+[1.106116] (-) TimerEvent: {}
+[1.206781] (-) TimerEvent: {}
+[1.307454] (-) TimerEvent: {}
+[1.408141] (-) TimerEvent: {}
+[1.508915] (-) TimerEvent: {}
+[1.609578] (-) TimerEvent: {}
+[1.710256] (-) TimerEvent: {}
+[1.810969] (-) TimerEvent: {}
+[1.911649] (-) TimerEvent: {}
+[2.012325] (-) TimerEvent: {}
+[2.113072] (-) TimerEvent: {}
+[2.213764] (-) TimerEvent: {}
+[2.314492] (-) TimerEvent: {}
+[2.415171] (-) TimerEvent: {}
+[2.515841] (-) TimerEvent: {}
+[2.616538] (-) TimerEvent: {}
+[2.717304] (-) TimerEvent: {}
+[2.818028] (-) TimerEvent: {}
+[2.918729] (-) TimerEvent: {}
+[3.019431] (-) TimerEvent: {}
+[3.120131] (-) TimerEvent: {}
+[3.220822] (-) TimerEvent: {}
+[3.321535] (-) TimerEvent: {}
+[3.422215] (-) TimerEvent: {}
+[3.522917] (-) TimerEvent: {}
+[3.623587] (-) TimerEvent: {}
+[3.724461] (-) TimerEvent: {}
+[3.825194] (-) TimerEvent: {}
+[3.925871] (-) TimerEvent: {}
+[4.026548] (-) TimerEvent: {}
+[4.127228] (-) TimerEvent: {}
+[4.228034] (-) TimerEvent: {}
+[4.328830] (-) TimerEvent: {}
+[4.429523] (-) TimerEvent: {}
+[4.530231] (-) TimerEvent: {}
+[4.631264] (-) TimerEvent: {}
+[4.731975] (-) TimerEvent: {}
+[4.832741] (-) TimerEvent: {}
+[4.933485] (-) TimerEvent: {}
+[5.034223] (-) TimerEvent: {}
+[5.134894] (-) TimerEvent: {}
+[5.235650] (-) TimerEvent: {}
+[5.336352] (-) TimerEvent: {}
+[5.437098] (-) TimerEvent: {}
+[5.537808] (-) TimerEvent: {}
+[5.638516] (-) TimerEvent: {}
+[5.739256] (-) TimerEvent: {}
+[5.839983] (-) TimerEvent: {}
+[5.935899] (control_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/qcar_ros2_ws/src/control_cpp/src/lane_detect_node.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic void LaneDetect::onMouseStatic(int, int, int, int, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.936692] (control_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/qcar_ros2_ws/src/control_cpp/src/lane_detect_node.cpp:37:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.937170] (control_cpp) StderrLine: {'line': b'     static void onMouseStatic(int event, int x, int y, int \x1b[01;35m\x1b[Kflags\x1b[m\x1b[K, void* userdata) {\n'}
+[5.937580] (control_cpp) StderrLine: {'line': b'                                                            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.940117] (-) TimerEvent: {}
+[6.040751] (-) TimerEvent: {}
+[6.141434] (-) TimerEvent: {}
+[6.242118] (-) TimerEvent: {}
+[6.342804] (-) TimerEvent: {}
+[6.443507] (-) TimerEvent: {}
+[6.544199] (-) TimerEvent: {}
+[6.644935] (-) TimerEvent: {}
+[6.745637] (-) TimerEvent: {}
+[6.846318] (-) TimerEvent: {}
+[6.947026] (-) TimerEvent: {}
+[7.047738] (-) TimerEvent: {}
+[7.148536] (-) TimerEvent: {}
+[7.249472] (-) TimerEvent: {}
+[7.351144] (-) TimerEvent: {}
+[7.451817] (-) TimerEvent: {}
+[7.552502] (-) TimerEvent: {}
+[7.653258] (-) TimerEvent: {}
+[7.753985] (-) TimerEvent: {}
+[7.854666] (-) TimerEvent: {}
+[7.955347] (-) TimerEvent: {}
+[8.056032] (-) TimerEvent: {}
+[8.156757] (-) TimerEvent: {}
+[8.257441] (-) TimerEvent: {}
+[8.358131] (-) TimerEvent: {}
+[8.458814] (-) TimerEvent: {}
+[8.559496] (-) TimerEvent: {}
+[8.660165] (-) TimerEvent: {}
+[8.760859] (-) TimerEvent: {}
+[8.861523] (-) TimerEvent: {}
+[8.962189] (-) TimerEvent: {}
+[9.062869] (-) TimerEvent: {}
+[9.163540] (-) TimerEvent: {}
+[9.264247] (-) TimerEvent: {}
+[9.365280] (-) TimerEvent: {}
+[9.465959] (-) TimerEvent: {}
+[9.566625] (-) TimerEvent: {}
+[9.667293] (-) TimerEvent: {}
+[9.767960] (-) TimerEvent: {}
+[9.868672] (-) TimerEvent: {}
+[9.969323] (-) TimerEvent: {}
+[10.069982] (-) TimerEvent: {}
+[10.170697] (-) TimerEvent: {}
+[10.201954] (control_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lane_detect_node\x1b[0m\n'}
+[10.270888] (-) TimerEvent: {}
+[10.371677] (-) TimerEvent: {}
+[10.472449] (-) TimerEvent: {}
+[10.573246] (-) TimerEvent: {}
+[10.673937] (-) TimerEvent: {}
+[10.774644] (-) TimerEvent: {}
+[10.875375] (-) TimerEvent: {}
+[10.901411] (control_cpp) StdoutLine: {'line': b'[100%] Built target lane_detect_node\n'}
+[10.914317] (control_cpp) CommandEnded: {'returncode': 0}
+[10.975598] (-) TimerEvent: {}
+[11.021606] (control_cpp) JobProgress: {'identifier': 'control_cpp', 'progress': 'install'}
+[11.065144] (control_cpp) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/nvidia/qcar_ros2_ws/build/control_cpp'], 'cwd': '/home/nvidia/qcar_ros2_ws/build/control_cpp', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LANGUAGE', 'en_CA:en'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('LD_LIBRARY_PATH', '/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/nvidia/qcar_ros2_ws/src/control_cpp'), ('HOME', '/home/nvidia'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/home/nvidia/ros2_install'), ('COLCON_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('RUNLEVEL', '3'), ('XDG_RUNTIME_DIR', '/home/nvidia/Documents/Quanser'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libstdc++.so.6'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install/control_cpp:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing'), ('SUDO_COMMAND', '/bin/bash'), ('ROS_DOMAIN_ID', '42'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SUDO_USER', 'nvidia'), ('OpenCV_DIR', '/usr/local/lib/cmake/opencv4'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/nvidia/qcar_ros2_ws/build/control_cpp'), ('PYTHONPATH', '/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/control_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python'), ('COLCON', '1'), ('LIBGL_DRIVERS_PATH', '/usr/lib/aarch64-linux-gnu/dri'), ('CMAKE_PREFIX_PATH', '/home/nvidia/qcar_ros2_ws/install/control_cpp:/home/nvidia/qcar_ros2_ws/install/slam_toolbox:/home/nvidia/qcar_ros2_ws/install/cpp_qcar:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing')]), 'shell': False}
+[11.076602] (-) TimerEvent: {}
+[11.102639] (control_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.103376] (control_cpp) StdoutLine: {'line': b'-- Installing: /home/nvidia/qcar_ros2_ws/install/control_cpp/lib/control_cpp/lane_detect_node\n'}
+[11.106821] (control_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/qcar_ros2_ws/install/control_cpp/lib/control_cpp/lane_detect_node" to ""\n'}
+[11.107520] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/package_run_dependencies/control_cpp\n'}
+[11.108061] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/parent_prefix_path/control_cpp\n'}
+[11.108570] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/ament_prefix_path.sh\n'}
+[11.109138] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/path.sh\n'}
+[11.109604] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.bash\n'}
+[11.110185] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.sh\n'}
+[11.110877] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.zsh\n'}
+[11.113275] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/packages/control_cpp\n'}
+[11.117557] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig.cmake\n'}
+[11.118140] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig-version.cmake\n'}
+[11.118926] (control_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/package.xml\n'}
+[11.120111] (control_cpp) CommandEnded: {'returncode': 0}
+[11.177810] (-) TimerEvent: {}
+[11.280604] (-) TimerEvent: {}
+[11.293261] (control_cpp) JobEnded: {'identifier': 'control_cpp', 'rc': 0}
+[11.296944] (-) EventReactorShutdown: {}

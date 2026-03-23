@@ -1,0 +1,19 @@
+[0.049s] Invoking command in '/home/nvidia/qcar_ros2_ws/build/control_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/qcar_ros2_ws/build/control_cpp -- -j4 -l4
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target lane_detect_node[0m
+[0.158s] [100%] Built target lane_detect_node
+[0.172s] Invoked command in '/home/nvidia/qcar_ros2_ws/build/control_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake --build /home/nvidia/qcar_ros2_ws/build/control_cpp -- -j4 -l4
+[0.277s] Invoking command in '/home/nvidia/qcar_ros2_ws/build/control_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/qcar_ros2_ws/build/control_cpp
+[0.288s] -- Install configuration: ""
+[0.289s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/lib/control_cpp/lane_detect_node
+[0.289s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/package_run_dependencies/control_cpp
+[0.290s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/parent_prefix_path/control_cpp
+[0.290s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/ament_prefix_path.sh
+[0.291s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/path.sh
+[0.291s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.bash
+[0.292s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.sh
+[0.292s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.zsh
+[0.293s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/packages/control_cpp
+[0.294s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig.cmake
+[0.299s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig-version.cmake
+[0.300s] -- Up-to-date: /home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/package.xml
+[0.301s] Invoked command in '/home/nvidia/qcar_ros2_ws/build/control_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing /usr/local/bin/cmake --install /home/nvidia/qcar_ros2_ws/build/control_cpp

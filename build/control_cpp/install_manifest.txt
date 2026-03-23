@@ -1,0 +1,12 @@
+/home/nvidia/qcar_ros2_ws/install/control_cpp/lib/control_cpp/lane_detect_node
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/package_run_dependencies/control_cpp
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/parent_prefix_path/control_cpp
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/ament_prefix_path.sh
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/environment/path.sh
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.bash
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.sh
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/local_setup.zsh
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/ament_index/resource_index/packages/control_cpp
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig.cmake
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/cmake/control_cppConfig-version.cmake
+/home/nvidia/qcar_ros2_ws/install/control_cpp/share/control_cpp/package.xml

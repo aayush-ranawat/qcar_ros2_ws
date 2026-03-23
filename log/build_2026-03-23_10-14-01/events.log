@@ -1,0 +1,126 @@
+[0.000000] (-) TimerEvent: {}
+[0.002166] (-) JobUnselected: {'identifier': 'control_nodes'}
+[0.002716] (-) JobUnselected: {'identifier': 'cpp_qcar'}
+[0.003530] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.004152] (qcar_nodes) JobQueued: {'identifier': 'qcar_nodes', 'dependencies': OrderedDict()}
+[0.007071] (qcar_nodes) JobStarted: {'identifier': 'qcar_nodes'}
+[0.099348] (-) TimerEvent: {}
+[0.200185] (-) TimerEvent: {}
+[0.300814] (-) TimerEvent: {}
+[0.401466] (-) TimerEvent: {}
+[0.502158] (-) TimerEvent: {}
+[0.602782] (-) TimerEvent: {}
+[0.703393] (-) TimerEvent: {}
+[0.803983] (-) TimerEvent: {}
+[0.904571] (-) TimerEvent: {}
+[1.005236] (-) TimerEvent: {}
+[1.105867] (-) TimerEvent: {}
+[1.206571] (-) TimerEvent: {}
+[1.307190] (-) TimerEvent: {}
+[1.407837] (-) TimerEvent: {}
+[1.508633] (-) TimerEvent: {}
+[1.609462] (-) TimerEvent: {}
+[1.710073] (-) TimerEvent: {}
+[1.810685] (-) TimerEvent: {}
+[1.911292] (-) TimerEvent: {}
+[2.011890] (-) TimerEvent: {}
+[2.112492] (-) TimerEvent: {}
+[2.213096] (-) TimerEvent: {}
+[2.313702] (-) TimerEvent: {}
+[2.414311] (-) TimerEvent: {}
+[2.514911] (-) TimerEvent: {}
+[2.615809] (-) TimerEvent: {}
+[2.716713] (-) TimerEvent: {}
+[2.817333] (-) TimerEvent: {}
+[2.917984] (-) TimerEvent: {}
+[3.018608] (-) TimerEvent: {}
+[3.119221] (-) TimerEvent: {}
+[3.219950] (-) TimerEvent: {}
+[3.320704] (-) TimerEvent: {}
+[3.363836] (qcar_nodes) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/qcar_nodes', 'build', '--build-base', '/home/nvidia/qcar_ros2_ws/build/qcar_nodes/build', 'install', '--record', '/home/nvidia/qcar_ros2_ws/build/qcar_nodes/install.log', '--install-scripts', '$base/lib/qcar_nodes', '--single-version-externally-managed'], 'cwd': '/home/nvidia/qcar_ros2_ws/src/qcar_nodes', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/root', 'USER': 'root', 'LANGUAGE': 'en_CA:en', 'QAL_DIR': '/home/nvidia/Documents/Quanser', 'LD_LIBRARY_PATH': '/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/lib/aarch64-linux-gnu:/usr/local/cuda-10.2/lib64:', 'SHLVL': '1', 'HOME': '/home/nvidia', 'OLDPWD': '/home/nvidia', 'ROS_PYTHON_VERSION': '3', '_colcon_cd_root': '/home/nvidia/ros2_install', 'COLCON_PREFIX_PATH': '/home/nvidia/qcar_ros2_ws/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'root', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'RUNLEVEL': '3', 'XDG_RUNTIME_DIR': '/home/nvidia/Documents/Quanser', 'DISPLAY': 'localhost:11.0', 'LANG': 'en_US.UTF-8', 'LD_PRELOAD': '/usr/lib/aarch64-linux-gnu/libstdc++.so.6', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/nvidia/qcar_ros2_ws/install/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes:/opt/ros/dashing', 'SUDO_COMMAND': '/bin/bash', 'ROS_DOMAIN_ID': '42', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SUDO_USER': 'nvidia', 'OpenCV_DIR': '/usr/local/lib/cmake/opencv4', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/nvidia/qcar_ros2_ws/build/qcar_nodes', 'PYTHONPATH': '/home/nvidia/qcar_ros2_ws/build/qcar_nodes/prefix_override:/home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/install/slam_toolbox/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/qcar_nodes:/home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages:/home/nvidia/qcar_ros2_ws/build/control_nodes:/home/nvidia/qcar_ros2_ws/install/control_nodes/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages:/home/nvidia/Documents/Quanser/libraries/python', 'COLCON': '1', 'LIBGL_DRIVERS_PATH': '/usr/lib/aarch64-linux-gnu/dri', 'CMAKE_PREFIX_PATH': '/home/nvidia/qcar_ros2_ws/install/slam_toolbox:/home/nvidia/qcar_ros2_ws/install/cpp_qcar'}, 'shell': False}
+[3.420943] (-) TimerEvent: {}
+[3.521799] (-) TimerEvent: {}
+[3.622525] (-) TimerEvent: {}
+[3.723205] (-) TimerEvent: {}
+[3.823816] (-) TimerEvent: {}
+[3.924413] (-) TimerEvent: {}
+[4.025022] (-) TimerEvent: {}
+[4.125625] (-) TimerEvent: {}
+[4.226246] (-) TimerEvent: {}
+[4.326809] (-) TimerEvent: {}
+[4.427403] (-) TimerEvent: {}
+[4.528034] (-) TimerEvent: {}
+[4.532471] (qcar_nodes) StderrLine: {'line': b"/home/nvidia/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[4.533279] (qcar_nodes) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[4.628191] (-) TimerEvent: {}
+[4.665360] (qcar_nodes) StdoutLine: {'line': b'running egg_info\n'}
+[4.667648] (qcar_nodes) StdoutLine: {'line': b'creating ../../build/qcar_nodes/qcar_nodes.egg-info\n'}
+[4.668202] (qcar_nodes) StdoutLine: {'line': b'writing ../../build/qcar_nodes/qcar_nodes.egg-info/PKG-INFO\n'}
+[4.668922] (qcar_nodes) StdoutLine: {'line': b'writing dependency_links to ../../build/qcar_nodes/qcar_nodes.egg-info/dependency_links.txt\n'}
+[4.669596] (qcar_nodes) StdoutLine: {'line': b'writing entry points to ../../build/qcar_nodes/qcar_nodes.egg-info/entry_points.txt\n'}
+[4.670058] (qcar_nodes) StdoutLine: {'line': b'writing requirements to ../../build/qcar_nodes/qcar_nodes.egg-info/requires.txt\n'}
+[4.670518] (qcar_nodes) StdoutLine: {'line': b'writing top-level names to ../../build/qcar_nodes/qcar_nodes.egg-info/top_level.txt\n'}
+[4.677269] (qcar_nodes) StdoutLine: {'line': b"writing manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'\n"}
+[4.683361] (qcar_nodes) StdoutLine: {'line': b"reading manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'\n"}
+[4.687630] (qcar_nodes) StdoutLine: {'line': b"writing manifest file '../../build/qcar_nodes/qcar_nodes.egg-info/SOURCES.txt'\n"}
+[4.688224] (qcar_nodes) StdoutLine: {'line': b'running build\n'}
+[4.688592] (qcar_nodes) StdoutLine: {'line': b'running build_py\n'}
+[4.689084] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build\n'}
+[4.689568] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib\n'}
+[4.690001] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.690434] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/lidar_test.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.690837] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/commandnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.691313] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/lidarnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.691822] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/__init__.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.692247] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/qcarnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.692648] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/Imageviewer.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.693045] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/rgbdnode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.693422] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/ImageRecorder.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.693775] (qcar_nodes) StdoutLine: {'line': b'copying qcar_nodes/csinode.py -> /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes\n'}
+[4.694309] (qcar_nodes) StdoutLine: {'line': b'running install\n'}
+[4.694807] (qcar_nodes) StderrLine: {'line': b'/home/nvidia/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.695193] (qcar_nodes) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[4.695751] (qcar_nodes) StdoutLine: {'line': b'running install_lib\n'}
+[4.698038] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.698563] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/lidar_test.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.698995] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/commandnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.699401] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/lidarnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.699802] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/__init__.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.700193] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/qcarnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.700630] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/Imageviewer.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.701029] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/rgbdnode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.701425] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/ImageRecorder.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.701789] (qcar_nodes) StdoutLine: {'line': b'copying /home/nvidia/qcar_ros2_ws/build/qcar_nodes/build/lib/qcar_nodes/csinode.py -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes\n'}
+[4.702928] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/lidar_test.py to lidar_test.cpython-36.pyc\n'}
+[4.704553] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/commandnode.py to commandnode.cpython-36.pyc\n'}
+[4.706332] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/lidarnode.py to lidarnode.cpython-36.pyc\n'}
+[4.708588] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/__init__.py to __init__.cpython-36.pyc\n'}
+[4.709096] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/qcarnode.py to qcarnode.cpython-36.pyc\n'}
+[4.711988] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/Imageviewer.py to Imageviewer.cpython-36.pyc\n'}
+[4.714093] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/rgbdnode.py to rgbdnode.cpython-36.pyc\n'}
+[4.716452] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/ImageRecorder.py to ImageRecorder.cpython-36.pyc\n'}
+[4.719125] (qcar_nodes) StdoutLine: {'line': b'byte-compiling /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes/csinode.py to csinode.cpython-36.pyc\n'}
+[4.722137] (qcar_nodes) StdoutLine: {'line': b'running install_data\n'}
+[4.724249] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index\n'}
+[4.724836] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index/resource_index\n'}
+[4.725262] (qcar_nodes) StdoutLine: {'line': b'creating /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index/resource_index/packages\n'}
+[4.725720] (qcar_nodes) StdoutLine: {'line': b'copying resource/qcar_nodes -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/ament_index/resource_index/packages\n'}
+[4.726145] (qcar_nodes) StdoutLine: {'line': b'copying package.xml -> /home/nvidia/qcar_ros2_ws/install/qcar_nodes/share/qcar_nodes\n'}
+[4.726522] (qcar_nodes) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.728298] (-) TimerEvent: {}
+[4.731116] (qcar_nodes) StdoutLine: {'line': b'Copying ../../build/qcar_nodes/qcar_nodes.egg-info to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/python3.6/site-packages/qcar_nodes-0.0.0-py3.6.egg-info\n'}
+[4.734480] (qcar_nodes) StdoutLine: {'line': b'running install_scripts\n'}
+[4.803006] (qcar_nodes) StdoutLine: {'line': b'Installing command_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.803656] (qcar_nodes) StdoutLine: {'line': b'Installing csi_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.804143] (qcar_nodes) StdoutLine: {'line': b'Installing image_recorder script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.804551] (qcar_nodes) StdoutLine: {'line': b'Installing img_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.804991] (qcar_nodes) StdoutLine: {'line': b'Installing lidar_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.805386] (qcar_nodes) StdoutLine: {'line': b'Installing qcar_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.805748] (qcar_nodes) StdoutLine: {'line': b'Installing rgbd_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.806164] (qcar_nodes) StdoutLine: {'line': b'Installing test_node script to /home/nvidia/qcar_ros2_ws/install/qcar_nodes/lib/qcar_nodes\n'}
+[4.806807] (qcar_nodes) StdoutLine: {'line': b"writing list of installed files to '/home/nvidia/qcar_ros2_ws/build/qcar_nodes/install.log'\n"}
+[4.828509] (-) TimerEvent: {}
+[4.910999] (qcar_nodes) CommandEnded: {'returncode': 0}
+[4.929295] (-) TimerEvent: {}
+[4.958095] (qcar_nodes) JobEnded: {'identifier': 'qcar_nodes', 'rc': 0}
+[4.960862] (-) EventReactorShutdown: {}
